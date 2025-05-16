@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SHED",
+    "section": "",
+    "text": "A base set up for GitHub Common Integration (CI) Quarto and python script environment."
+  },
+  {
+    "objectID": "script.html",
+    "href": "script.html",
+    "title": "python script",
+    "section": "",
+    "text": "A simple “Hello, world!” style example\n\n\nHello, world!"
+  }
+]

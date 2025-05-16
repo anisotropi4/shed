@@ -1,7 +1,0 @@
----
-title: SHED
-date: last-modified
-resources:
-  - .nojekyll
----
-A base set up for GitHub Common Integration (CI) Quarto and python script environment. 
