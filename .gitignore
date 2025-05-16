@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# emacs files
+*~
+
 # C extensions
 *.so
 
@@ -25,6 +28,10 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+
+# render files
+/docs/
+/index_files/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
