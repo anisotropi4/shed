@@ -1,0 +1,20 @@
+---
+title: python script
+format:
+  html: default
+number-sections: true
+execute:
+  echo: false
+resources:
+  - .nojekyll
+editor:
+  markdown:
+    wrap: sentence
+jupyter: python3
+---
+
+A simple "Hello, world!" style example
+
+```{python}
+print("Hello, world!")
+```
