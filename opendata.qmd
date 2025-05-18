@@ -19,24 +19,16 @@ format:
 
 A set of open data and other resources that could be used to produce transport and related visualisations. 
 
-## Base Geography
-
-The base geography and population data is based on:
-
-* The base map of mainland Britain is derived from the [WorldPop](https://hub.worldpop.org) base maps under [CC 4.0 by deed](https://creativecommons.org/licenses/by/4.0/) retrieved 2023-09-07.
-* OpenStreetMap data is then used to validate and also to identify 10 stations locations which is licensed under [CC-BY-SA 2.0](https://openstreetmap.org/copyright ) through the [OverPassAPI Turbo](https://overpass-turbo.eu/) service.
-
-
 ## Base Rail data
 
 These base data consist of the centre-line or network track-model, Network Rail location codes, plus the CIF format timetable and VSTP updates.
 
 | Product                                                                                                                                         | Note   | Owner  | Licence     |
 |:------------------------------------------------------------------------------------------------------------------------------------------------|:-------|:-------|:------------|
-| [Track Model](https://raildata.org.uk/dashboard/dataProduct/P-d6c0c7ee-6743-4999-9b9e-d2dd39585bdb/overview)                                    |  Railway network model Shapefile with link, node, reference lines and waymark layers. See [Open Data Technical Specification](https://raildata.org.uk/dataProduct/P-d6c0c7ee-6743-4999-9b9e-d2dd39585bdb/documentation). | [Network Rail](https://www.networkrail.co.uk/who-we-are/transparency-and-ethics/transparency/open-data-feeds/) | Open (OGL3) |
-| [CORPUS](https://raildata.org.uk/dashboard/dataProduct/P-9d26e657-26be-496b-b669-93b217d45859/overview)                                         | Lookup codes for rail stations from the CORPUS system (Codes for Operations, Retail & Planning – a Unified Solution). See [OpenRailData wiki](https://wiki.openraildata.com/index.php/Reference_Data#CORPUS:_Location_Reference_Data) | [Network Rail](https://www.networkrail.co.uk/who-we-are/transparency-and-ethics/transparency/open-data-feeds/) | Open (OGL3) |
-| [Schedule](https://raildata.org.uk/dashboard/dataProduct/P-dbd92416-2f09-4f72-ad42-d53bbfec50f3/overview)                                       | Daily train schedule extract and updates from the national Integrated Train Planning System in Common InterFace (CIF) format. See [OpenRailData wiki](https://wiki.openraildata.com/index.php/SCHEDULE) | [Network Rail](https://www.networkrail.co.uk/who-we-are/transparency-and-ethics/transparency/open-data-feeds/) | Open (OGL3) |
-| [Very Short-Term Planning (VSTP)](https://raildata.org.uk/dashboard/dataProduct/P-3cc7c8b3-a311-406b-85ed-8032c60f1b29/overview)                | Real-time train schedules created via the Very Short Term Plan (VSTP) process. See [OpenRailData wiki](https://wiki.openraildata.com/index.php/VSTP) | [Network Rail](https://www.networkrail.co.uk/who-we-are/transparency-and-ethics/transparency/open-data-feeds/) | Open (OGL3) |
+| [Track Model](https://raildata.org.uk/dashboard/dataProduct/P-d6c0c7ee-6743-4999-9b9e-d2dd39585bdb/overview)                                    |  Railway network model Shapefile with link, node, reference lines and waymark layers. See [Open Data Technical Specification](https://raildata.org.uk/dataProduct/P-d6c0c7ee-6743-4999-9b9e-d2dd39585bdb/documentation). | [Network Rail](https://www.networkrail.co.uk/who-we-are/transparency-and-ethics/transparency/open-data-feeds/) | Open ([OGL3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)) |
+| [CORPUS](https://raildata.org.uk/dashboard/dataProduct/P-9d26e657-26be-496b-b669-93b217d45859/overview)                                         | Lookup codes for rail stations from the CORPUS system (Codes for Operations, Retail & Planning – a Unified Solution). See [OpenRailData wiki](https://wiki.openraildata.com/index.php/Reference_Data#CORPUS:_Location_Reference_Data) | [Network Rail](https://www.networkrail.co.uk/who-we-are/transparency-and-ethics/transparency/open-data-feeds/) | Open ([OGL3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)) |
+| [Schedule](https://raildata.org.uk/dashboard/dataProduct/P-dbd92416-2f09-4f72-ad42-d53bbfec50f3/overview)                                       | Daily train schedule extract and updates from the national Integrated Train Planning System in Common InterFace (CIF) format. See [OpenRailData wiki](https://wiki.openraildata.com/index.php/SCHEDULE) | [Network Rail](https://www.networkrail.co.uk/who-we-are/transparency-and-ethics/transparency/open-data-feeds/) | Open ([OGL3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)) |
+| [Very Short-Term Planning (VSTP)](https://raildata.org.uk/dashboard/dataProduct/P-3cc7c8b3-a311-406b-85ed-8032c60f1b29/overview)                | Real-time train schedules created via the Very Short Term Plan (VSTP) process. See [OpenRailData wiki](https://wiki.openraildata.com/index.php/VSTP) | [Network Rail](https://www.networkrail.co.uk/who-we-are/transparency-and-ethics/transparency/open-data-feeds/) | Open ([OGL3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)) |
 
 
 ## Key Station and Public Transport Data
@@ -45,8 +37,8 @@ These data are the National Passenger Transport Access Node (NaPTAN) and Transpo
 
 | Product                                                                                                                                             | Note  | Owner   | Licence     |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------|:--------|:-------|:------------|
-| [NaPTAN & NPTG](https://beta-naptan.dft.gov) | This CSV and XML API contains information for all passenger transport nodes including rail, bus-stops, ferry terminals and airports. [PDF user guide](http://www.naptan.org.uk/schema/2.4/doc/NaPTANSchemaGuide-2.4-v0.57.pdf) | [Department for Transport (DfT)](https://findtransportdata.dft.gov.uk/) | Open (OGL3) |
-| [Station attributes for all mainline stations in GB](https://dataportal.orr.gov.uk/statistics/infrastructure-and-environment/rail-infrastructure-and-assets/table-6329-station-attributes-for-all-mainline-stations/) | Table 6329: Station attributes for all mainline stations, Great Britain as ODS file. | [Office of Road and Rail (ORR)](https://dataportal.orr.gov.uk/) | Open (OGL3) |
+| [NaPTAN & NPTG](https://beta-naptan.dft.gov) | This CSV and XML API contains information for all passenger transport nodes including rail, bus-stops, ferry terminals and airports. [PDF user guide](http://www.naptan.org.uk/schema/2.4/doc/NaPTANSchemaGuide-2.4-v0.57.pdf) | [Department for Transport (DfT)](https://findtransportdata.dft.gov.uk/) | Open ([OGL3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)) |
+| [Station attributes for all mainline stations in GB](https://dataportal.orr.gov.uk/statistics/infrastructure-and-environment/rail-infrastructure-and-assets/table-6329-station-attributes-for-all-mainline-stations/) | Table 6329: Station attributes for all mainline stations, Great Britain as ODS file. | [Office of Road and Rail (ORR)](https://dataportal.orr.gov.uk/) | Open ([OGL3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)) |
 | [Stations Reference Data](https://raildata.org.uk/dashboard/dataProduct/P-027a0f6c-b6dc-46eb-b743-5c6e73137aaf/overview) | Geographic station names output from journey planning in XML format file. | [Rail Development Group (RDG)](https://raildata.org.uk/dashboard/partnerDetails/1010/details) | Open        |
 | [Knowledgebase Stations data feed](https://raildata.org.uk/dashboard/dataProduct/P-88ffe920-471c-4fd9-8e0d-95d5b9b7a257/overview) | A station data-feed which includes information on train stations in XML format API. | [Rail Development Group (RDG)](https://raildata.org.uk/dashboard/partnerDetails/1010/details) | Open        |
 
@@ -56,24 +48,37 @@ These are the base Origin and Destination Matrix (ODM) data showing journeys bet
 
 | Product                                                                                                                                             | Note    | Owner  | Licence     |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------|:--------|:-------|:------------|
-| [Origin Destination Matrix 2018-19](https://raildata.org.uk/dashboard/dataProduct/P-c1b1cbbc-9fc5-425e-a0c9-9aa6cb5c619f/overview)        | Origin and destination matrix (ODM) financial year 2018-19 | [Office of Road and Rail (ORR)](https://dataportal.orr.gov.uk/) | Open (OGL3) |
-| [Origin Destination Matrix 2019-20](https://raildata.org.uk/dashboard/dataProduct/P-ea6deaac-fae4-4708-8307-36ad13732a7b/overview)        | Origin and destination matrix (ODM) financial year 2019-20 | [Office of Road and Rail (ORR)](https://dataportal.orr.gov.uk/) | Open (OGL3) |
-| [Origin Destination Matrix 2020-21](https://raildata.org.uk/dashboard/dataProduct/P-ba359b71-58c9-4f42-8c9d-e02e8e3a4330/overview)        | Origin and destination matrix (ODM) financial year 2020-21 | [Office of Road and Rail (ORR)](https://dataportal.orr.gov.uk/) | Open (OGL3) |
-| [Origin Destination Matrix 2021-22](https://raildata.org.uk/dashboard/dataProduct/P-a9faf6fd-b31f-491c-935a-f4ab3ffa5890/overview)        | Origin and destination matrix (ODM) financial year 2021-22 | [Office of Road and Rail (ORR)](https://dataportal.orr.gov.uk/) | Open (OGL3) |
-| [Origin Destination Matrix 2022-23](https://raildata.org.uk/dashboard/dataProduct/P-a839de9f-eafa-495e-92e3-ff23a33ad876/overview)        | Origin and destination matrix (ODM) financial year 2022-23 | [Office of Road and Rail (ORR)](https://dataportal.orr.gov.uk/) | Open (OGL3) |
-| [Origin Destination Matrix 2023-24](https://raildata.org.uk/dashboard/dataProduct/P-420268d5-b082-469e-98e4-47d92f714bc6/overview)        | Origin and destination matrix (ODM) financial year 2023-24 | [Office of Road and Rail (ORR)](https://dataportal.orr.gov.uk/) | Open (OGL3) |
+| [Origin Destination Matrix 2018-19](https://raildata.org.uk/dashboard/dataProduct/P-c1b1cbbc-9fc5-425e-a0c9-9aa6cb5c619f/overview)        | Origin and destination matrix (ODM) financial year 2018-19 | [Office of Road and Rail (ORR)](https://dataportal.orr.gov.uk/) | Open ([OGL3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)) |
+| [Origin Destination Matrix 2019-20](https://raildata.org.uk/dashboard/dataProduct/P-ea6deaac-fae4-4708-8307-36ad13732a7b/overview)        | Origin and destination matrix (ODM) financial year 2019-20 | [Office of Road and Rail (ORR)](https://dataportal.orr.gov.uk/) | Open ([OGL3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)) |
+| [Origin Destination Matrix 2020-21](https://raildata.org.uk/dashboard/dataProduct/P-ba359b71-58c9-4f42-8c9d-e02e8e3a4330/overview)        | Origin and destination matrix (ODM) financial year 2020-21 | [Office of Road and Rail (ORR)](https://dataportal.orr.gov.uk/) | Open ([OGL3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)) |
+| [Origin Destination Matrix 2021-22](https://raildata.org.uk/dashboard/dataProduct/P-a9faf6fd-b31f-491c-935a-f4ab3ffa5890/overview)        | Origin and destination matrix (ODM) financial year 2021-22 | [Office of Road and Rail (ORR)](https://dataportal.orr.gov.uk/) | Open ([OGL3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)) |
+| [Origin Destination Matrix 2022-23](https://raildata.org.uk/dashboard/dataProduct/P-a839de9f-eafa-495e-92e3-ff23a33ad876/overview)        | Origin and destination matrix (ODM) financial year 2022-23 | [Office of Road and Rail (ORR)](https://dataportal.orr.gov.uk/) | Open ([OGL3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)) |
+| [Origin Destination Matrix 2023-24](https://raildata.org.uk/dashboard/dataProduct/P-420268d5-b082-469e-98e4-47d92f714bc6/overview)        | Origin and destination matrix (ODM) financial year 2023-24 | [Office of Road and Rail (ORR)](https://dataportal.orr.gov.uk/) | Open ([OGL3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)) |
 
 
 ## Additional Network Rail Data
 | Product                                                                                                                                         | Note   | Owner    | Licence     |
 |:------------------------------------------------------------------------------------------------------------------------------------------------|:-------|:---------|:------------|
-| [Daily Footfall](https://raildata.org.uk/dashboard/dataProduct/P-ba403ccb-1d64-40a7-8a53-23e8d05e6026/overview)                                 | Count in and out of the concourse area of Network Rail managed rail stations as CSV. | [Network Rail](https://www.networkrail.co.uk/) | Open (OGL3) |
-| [SRAM Passenger Flow](https://raildata.org.uk/dashboard/dataProduct/P-62f7f4d0-8d19-48ff-916d-aa6d27549dd7/overview)                            | Strategic Rail Analysis Model (SRAM)for Great Britain uses  infrastructure, timetable and public transport schedules to model rail passenger. See [Passenger Load](https://raildata.org.uk/dashboard/dataProduct/P-62f7f4d0-8d19-48ff-916d-aa6d27549dd7/documentation) documentation. | [Network Rail](https://www.networkrail.co.uk/) | Open (OGL3) |
-| [Track Gradient](https://raildata.org.uk/dashboard/dataProduct/P-9931256f-ae3f-4475-abc5-e92842e1103b/overview)                                 | R&D Track Gradient uses LiDAR to automatically generate track-level gradient data. | [Network Rail](https://www.networkrail.co.uk) | Open (OGL3) |
-| [Workforce Headcount](https://raildata.org.uk/dashboard/dataProduct/P-597c224e-df7a-4511-a4a7-0dcb4e6cd94b/overview)                            | Network Rail headcount by functions for each period of the financial year. | [Network Rail](https://www.networkrail.co.uk) | Open (OGL3) |
+| [Daily Footfall](https://raildata.org.uk/dashboard/dataProduct/P-ba403ccb-1d64-40a7-8a53-23e8d05e6026/overview)                                 | Count in and out of the concourse area of Network Rail managed rail stations as CSV. | [Network Rail](https://www.networkrail.co.uk/) | Open ([OGL3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)) |
+| [SRAM Passenger Flow](https://raildata.org.uk/dashboard/dataProduct/P-62f7f4d0-8d19-48ff-916d-aa6d27549dd7/overview)                            | Strategic Rail Analysis Model (SRAM)for Great Britain uses  infrastructure, timetable and public transport schedules to model rail passenger. See [Passenger Load](https://raildata.org.uk/dashboard/dataProduct/P-62f7f4d0-8d19-48ff-916d-aa6d27549dd7/documentation) documentation. | [Network Rail](https://www.networkrail.co.uk/) | Open ([OGL3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)) |
+| [Track Gradient](https://raildata.org.uk/dashboard/dataProduct/P-9931256f-ae3f-4475-abc5-e92842e1103b/overview)                                 | R&D Track Gradient uses LiDAR to automatically generate track-level gradient data. | [Network Rail](https://www.networkrail.co.uk) | Open ([OGL3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)) |
+| [Workforce Headcount](https://raildata.org.uk/dashboard/dataProduct/P-597c224e-df7a-4511-a4a7-0dcb4e6cd94b/overview)                            | Network Rail headcount by functions for each period of the financial year. | [Network Rail](https://www.networkrail.co.uk) | Open ([OGL3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)) |
 
 # Reference
-Resources and other reference material used for talks and visualisations
+Resources and reference material used for talks and visualisations
+
+## Base Geography and Population Data
+
+::: {}
+1. The base map of mainland Britain and other European countries are derived from the [WorldPop](https://hub.worldpop.org) base maps under [CC 4.0 by deed](https://creativecommons.org/licenses/by/4.0/) retrieved 2023-09-07.
+2. EU [Global Human Settlement layer](https://human-settlement.emergency.copernicus.eu/), data licensed under [creative commons 4.0](https://creativecommons.org/licenses/by/4.0/)
+3. [OpenStreetMap](https://openstreetmap.org), data licensed under [Open Database License (ODbL) v1.0](https://opendatacommons.org/licenses/odbl/1-0/)
+4. Access to [OpenStreetMap](https://openstreetmap.org) through the [OverPassAPI Turbo](https://overpass-turbo.eu/) service.
+:::
+
+## Other Resources
+
+Code packages, libraries, fonts and other resources
 
 ::: {}
 (@) [International Klein Blue (#002FA7)](https://en.wikipedia.org/wiki/International_Klein_Blue)
@@ -87,22 +92,20 @@ Resources and other reference material used for talks and visualisations
 (@) [National Electronic Sectional Appendix](https://www.networkrail.co.uk/industry-and-commercial/information-for-operators/national-electronic-sectional-appendix/) (NESA)
 (@) Extract [NESA table data](https://github.com/anisotropi4/nesa)
 (@) Department for Transport [Energy and environment: data tables (ENV0201)](https://www.gov.uk/government/statistical-data-sets/energy-and-environment-data-tables-env)
-(@) [Global Human Settlement layer](https://human-settlement.emergency.copernicus.eu/), data licensed under [creative commons 4.0](https://creativecommons.org/licenses/by/4.0/)
-(@) [OpenStreetMap](https://openstreetmap.org), data licensed under [Open Database License (ODbL) v1.0](https://opendatacommons.org/licenses/odbl/1-0/)
-(@) [python](https://Python.org) language,    licensed under [PSF for python 3](https://docs.python.org/3/license.html)
-(@) [Pandas](https://pandas.pydata.org/), licensed under BSD 3-clause license
-(@) [GeoPandas](https://geopandas.org/), licensed under BSD 3-clause license
+(@) [python](https://Python.org) language, licensed under [PSF for python 3](https://docs.python.org/3/license.html)
+(@) [Pandas](https://pandas.pydata.org/), licensed under [BSD 3-clause license](https://opensource.org/license/BSD-3-clause)
+(@) [GeoPandas](https://geopandas.org/), licensed under [BSD 3-clause license](https://opensource.org/license/BSD-3-clause)
 (@) Department for Transport (DfT) [“Great British Railways: Williams-Shapps plan for rail”](https://www.gov.uk/government/publications/great-british-railways-williams-shapps-plan-for-rail)
 (@) [UK Electrification map](https://electricrailmap.gitlab.io/)
 (@) Railway Industry Association [“Why Rail Electrification”](https://www.riagb.org.uk/RIA/Newsroom/Publications%20Folder/Why_Rail_Electrification_Report.aspx), 2021
 (@) European Agency for Railways (ERA) [“Fostering Rail Through Green Deal – part 2 Freight”](https://www.era.europa.eu/content/era-report-fostering-railway-sector-through-european-green-deal-part-2-freight_en), 2021
 (@) RailNet Europe, [“Timetabling and Capacity Redesign (TTR)”](https://rne.eu/sales-timetabling/ttr), 2022
 (@) Network Rail, [“Rail freight forecasts Scenarios for 2033-34 and 2043-44”](https://www.networkrail.co.uk/wp-content/uploads/2020/08/Rail-freight-forecasts-Scenarios-for-2033-34-and-2043-44.pdf), 2016
-(@) [Shapely](https://shapely.readthedocs.io/en/stable/) python package for the manipulation and analysis of planar geometric objects, licensed under BSD 3-clause license
+(@) [Shapely](https://shapely.readthedocs.io/en/stable/) python package for the manipulation and analysis of planar geometric objects, licensed under [BSD 3-clause license](https://opensource.org/license/BSD-3-clause)
 (@) Python [Rasterio](https://rasterio.readthedocs.io/en/latest/index.html) package for reading raster datasets, under the [Rasterio license](https://rasterio.readthedocs.io/en/stable/intro.html)
-(@) Python [Tobler](https://pysal.org/tobler) interpolation and mapping package, under BSD license
-(@) [QGIS](https://qgis.org), a Geographic Information System (GIS), licensed under the Attribution-ShareAlike 3.0 license
+(@) Python [Tobler](https://pysal.org/tobler) interpolation and mapping package, under [BSD 3-clause license](https://pysal.org/tobler)
+(@) [QGIS](https://qgis.org), a Geographic Information System (GIS), licensed under the [Attribution-ShareAlike 3.0 license](https://creativecommons.org/licenses/by-sa/3.0/deed.en)
 (@) [OSMnx: New Methods for Acquiring, Constructing, Analyzing, and Visualizing Complex Street Networks](https://geoffboeing.com/publications/osmnx-complex-street-networks/), Computers, Environment and Urban Systems 65, 126-139. Boeing, G. 2017.
-(@) [Uber H3](https://github.com/uber/h3-py) Uber python hexagon library, licensed under the Apache license 2.0
+(@) [Uber H3](https://github.com/uber/h3-py) Uber python hexagon library, licensed under the [Apache license 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)
 (@) National Rail Enquires (NRE) [Transport Fixed Links](https://raildata.org.uk/dashboard/dataProduct/P-9568f5b6-598e-48c6-8754-cd8c3a552d1c/overview) with additional fixed links between Zone1/DLR locations to help origin and destination journey planning
 :::
