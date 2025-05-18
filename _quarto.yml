@@ -2,6 +2,7 @@ project:
   type: website
   render:
     - index.qmd
+    - opendata.qmd
     - script.qmd
   output-dir: docs
 
@@ -16,6 +17,8 @@ website:
     left:
       - href: index.qmd
         text: "index"
+      - href: opendata.qmd
+        text: "open data"
       - href: script.qmd
         text: "python script"
   site-url: "https://anisotropi4@anisotropi4.github.io/shed/" # makes site links work on your remote site
