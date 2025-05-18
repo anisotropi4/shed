@@ -14,13 +14,6 @@
     "text": "A set of open data and other resources that could be used to produce transport and related visualisations."
   },
   {
-    "objectID": "opendata.html#base-geography",
-    "href": "opendata.html#base-geography",
-    "title": "Open Data for public-transport visualisation",
-    "section": "Base Geography",
-    "text": "Base Geography\nThe base geography and population data is based on:\n\nThe base map of mainland Britain is derived from the WorldPop base maps under CC 4.0 by deed retrieved 2023-09-07.\nOpenStreetMap data is then used to validate and also to identify 10 stations locations which is licensed under CC-BY-SA 2.0 through the OverPassAPI Turbo service."
-  },
-  {
     "objectID": "opendata.html#base-rail-data",
     "href": "opendata.html#base-rail-data",
     "title": "Open Data for public-transport visualisation",
@@ -47,6 +40,20 @@
     "title": "Open Data for public-transport visualisation",
     "section": "Additional Network Rail Data",
     "text": "Additional Network Rail Data\n\n\n\nProduct\nNote\nOwner\nLicence\n\n\n\n\nDaily Footfall\nCount in and out of the concourse area of Network Rail managed rail stations as CSV.\nNetwork Rail\nOpen (OGL3)\n\n\nSRAM Passenger Flow\nStrategic Rail Analysis Model (SRAM)for Great Britain uses infrastructure, timetable and public transport schedules to model rail passenger. See Passenger Load documentation.\nNetwork Rail\nOpen (OGL3)\n\n\nTrack Gradient\nR&D Track Gradient uses LiDAR to automatically generate track-level gradient data.\nNetwork Rail\nOpen (OGL3)\n\n\nWorkforce Headcount\nNetwork Rail headcount by functions for each period of the financial year.\nNetwork Rail\nOpen (OGL3)"
+  },
+  {
+    "objectID": "opendata.html#base-geography-and-population-data",
+    "href": "opendata.html#base-geography-and-population-data",
+    "title": "Open Data for public-transport visualisation",
+    "section": "Base Geography and Population Data",
+    "text": "Base Geography and Population Data\n\n\nThe base map of mainland Britain and other European countries are derived from the WorldPop base maps under CC 4.0 by deed retrieved 2023-09-07.\nEU Global Human Settlement layer, data licensed under creative commons 4.0\nOpenStreetMap, data licensed under Open Database License (ODbL) v1.0\nAccess to OpenStreetMap through the OverPassAPI Turbo service."
+  },
+  {
+    "objectID": "opendata.html#other-resources",
+    "href": "opendata.html#other-resources",
+    "title": "Open Data for public-transport visualisation",
+    "section": "Other Resources",
+    "text": "Other Resources\nCode packages, libraries, fonts and other resources\n\n\nInternational Klein Blue (#002FA7)\nDescription and download for Rail Alphabet,\n“London Underground Tube” by SPSmiler\nHomer, Iliad, Perseus Digital Library, accessed 4 May 2022\nTransport Statistics Department for Transport\nDepartment for Business, Energy & Industry Strategy\nOpen Rail Data wiki\nRail Development Group, “Concept of Operations – Stock and Crew System (RDG-CONOPS/NTI/002)”, Issue 1.1, January 2021\nNational Electronic Sectional Appendix (NESA)\nExtract NESA table data\nDepartment for Transport Energy and environment: data tables (ENV0201)\npython language, licensed under PSF for python 3\nPandas, licensed under BSD 3-clause license\nGeoPandas, licensed under BSD 3-clause license\nDepartment for Transport (DfT) “Great British Railways: Williams-Shapps plan for rail”\nUK Electrification map\nRailway Industry Association “Why Rail Electrification”, 2021\nEuropean Agency for Railways (ERA) “Fostering Rail Through Green Deal – part 2 Freight”, 2021\nRailNet Europe, “Timetabling and Capacity Redesign (TTR)”, 2022\nNetwork Rail, “Rail freight forecasts Scenarios for 2033-34 and 2043-44”, 2016\nShapely python package for the manipulation and analysis of planar geometric objects, licensed under BSD 3-clause license\nPython Rasterio package for reading raster datasets, under the Rasterio license\nPython Tobler interpolation and mapping package, under BSD 3-clause license\nQGIS, a Geographic Information System (GIS), licensed under the Attribution-ShareAlike 3.0 license\nOSMnx: New Methods for Acquiring, Constructing, Analyzing, and Visualizing Complex Street Networks, Computers, Environment and Urban Systems 65, 126-139. Boeing, G. 2017.\nUber H3 Uber python hexagon library, licensed under the Apache license 2.0\nNational Rail Enquires (NRE) Transport Fixed Links with additional fixed links between Zone1/DLR locations to help origin and destination journey planning"
   },
   {
     "objectID": "script.html",
