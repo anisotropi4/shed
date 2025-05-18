@@ -77,13 +77,13 @@ Resources and other reference material used for talks and visualisations
 
 ::: {}
 (@) [International Klein Blue (#002FA7)](https://en.wikipedia.org/wiki/International_Klein_Blue)
-(@) [Rail Alphabet](https://www.strathpefferjunction.com/british-railway-typefaces-fonts/), description and download
-(@) SPSmiler, [“London Underground Tube”](https://commons.wikimedia.org/wiki/File:Why_London_Underground_is_nicknamed_The_Tube.jpg)
+(@) Description and download for [Rail Alphabet](https://www.strathpefferjunction.com/british-railway-typefaces-fonts/), 
+(@) [“London Underground Tube”](https://commons.wikimedia.org/wiki/File:Why_London_Underground_is_nicknamed_The_Tube.jpg) by SPSmiler
 (@) [Homer, Iliad](http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0133), Perseus Digital Library, accessed 4 May 2022
 (@) [Transport Statistics Department for Transport](https://www.gov.uk/government/statistics/transport-statistics-great-britain-2021/transport-statistics-great-britain-2021)
 (@) Department for Business, [Energy & Industry Strategy](https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2021)
 (@) [Open Rail Data wiki](https://wiki.openraildata.com/index.php/Main_Page)
-(@) Rail Development Group [“Concept of Operations – Stock and Crew System"](https://www.raildeliverygroup.com/media-centre-docman/acop/284-rdgconceptofoperations-stockandcrewv1-0-reformat/file.html),  (RDG-CONOPS/NTI/002), Issue 1.1, January 2021
+(@) Rail Development Group, [“Concept of Operations – Stock and Crew System (RDG-CONOPS/NTI/002)"](https://www.raildeliverygroup.com/media-centre-docman/acop/284-rdgconceptofoperations-stockandcrewv1-0-reformat/file.html), Issue 1.1, January 2021
 (@) [National Electronic Sectional Appendix](https://www.networkrail.co.uk/industry-and-commercial/information-for-operators/national-electronic-sectional-appendix/) (NESA)
 (@) Extract [NESA table data](https://github.com/anisotropi4/nesa)
 (@) Department for Transport [Energy and environment: data tables (ENV0201)](https://www.gov.uk/government/statistical-data-sets/energy-and-environment-data-tables-env)
