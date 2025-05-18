@@ -12,5 +12,47 @@
     "title": "SHED",
     "section": "",
     "text": "A base set up for GitHub Common Integration (CI) Quarto and python script environment."
+  },
+  {
+    "objectID": "opendata.html",
+    "href": "opendata.html",
+    "title": "Open Data for public-transport visualisation",
+    "section": "",
+    "text": "A set of open data and other resources that could be used to produce transport and related visualisations."
+  },
+  {
+    "objectID": "opendata.html#base-geography",
+    "href": "opendata.html#base-geography",
+    "title": "Open Data for public-transport visualisation",
+    "section": "Base Geography",
+    "text": "Base Geography\nThe base geography and population data is based on:\n\nThe base map of mainland Britain is derived from the WorldPop base maps under CC 4.0 by deed retrieved 2023-09-07.\nOpenStreetMap data is then used to validate and also to identify 10 stations locations which is licensed under CC-BY-SA 2.0 through the OverPassAPI Turbo service."
+  },
+  {
+    "objectID": "opendata.html#base-rail-data",
+    "href": "opendata.html#base-rail-data",
+    "title": "Open Data for public-transport visualisation",
+    "section": "Base Rail data",
+    "text": "Base Rail data\nThese base data consist of the centre-line or network track-model, Network Rail location codes, plus the CIF format timetable and VSTP updates.\n\n\n\nProduct\nNote\nOwner\nLicence\n\n\n\n\nTrack Model\nRailway network model Shapefile with link, node, reference lines and waymark layers. See Open Data Technical Specification.\nNetwork Rail\nOpen (OGL3)\n\n\nCORPUS\nLookup codes for rail stations from the CORPUS system (Codes for Operations, Retail & Planning – a Unified Solution). See OpenRailData wiki\nNetwork Rail\nOpen (OGL3)\n\n\nSchedule\nDaily train schedule extract and updates from the national Integrated Train Planning System in Common InterFace (CIF) format. See OpenRailData wiki\nNetwork Rail\nOpen (OGL3)\n\n\nVery Short-Term Planning (VSTP)\nReal-time train schedules created via the Very Short Term Plan (VSTP) process. See OpenRailData wiki\nNetwork Rail\nOpen (OGL3)"
+  },
+  {
+    "objectID": "opendata.html#key-station-and-public-transport-data",
+    "href": "opendata.html#key-station-and-public-transport-data",
+    "title": "Open Data for public-transport visualisation",
+    "section": "Key Station and Public Transport Data",
+    "text": "Key Station and Public Transport Data\nThese data are the National Passenger Transport Access Node (NaPTAN) and Transport Gazette for Great Britain.\n\n\n\nProduct\nNote\nOwner\nLicence\n\n\n\n\nNaPTAN & NPTG\nThis CSV and XML API contains information for all passenger transport nodes including rail, bus-stops, ferry terminals and airports. PDF user guide\nDepartment for Transport (DfT)\nOpen (OGL3)\n\n\nStation attributes for all mainline stations in GB\nTable 6329: Station attributes for all mainline stations, Great Britain as ODS file.\nOffice of Road and Rail (ORR)\nOpen (OGL3)\n\n\nStations Reference Data\nGeographic station names output from journey planning in XML format file.\nRail Development Group (RDG)\nOpen\n\n\nKnowledgebase Stations data feed\nA station data-feed which includes information on train stations in XML format API.\nRail Development Group (RDG)\nOpen"
+  },
+  {
+    "objectID": "opendata.html#office-of-road-and-rail-orign-and-destination-odm-data",
+    "href": "opendata.html#office-of-road-and-rail-orign-and-destination-odm-data",
+    "title": "Open Data for public-transport visualisation",
+    "section": "Office of Road and Rail Orign and Destination (ODM) data",
+    "text": "Office of Road and Rail Orign and Destination (ODM) data\nThese are the base Origin and Destination Matrix (ODM) data showing journeys between all pairs of mainline stations in Great Britain used in ODM visualisations.\n\n\n\nProduct\nNote\nOwner\nLicence\n\n\n\n\nOrigin Destination Matrix 2018-19\nOrigin and destination matrix (ODM) financial year 2018-19\nOffice of Road and Rail (ORR)\nOpen (OGL3)\n\n\nOrigin Destination Matrix 2019-20\nOrigin and destination matrix (ODM) financial year 2019-20\nOffice of Road and Rail (ORR)\nOpen (OGL3)\n\n\nOrigin Destination Matrix 2020-21\nOrigin and destination matrix (ODM) financial year 2020-21\nOffice of Road and Rail (ORR)\nOpen (OGL3)\n\n\nOrigin Destination Matrix 2021-22\nOrigin and destination matrix (ODM) financial year 2021-22\nOffice of Road and Rail (ORR)\nOpen (OGL3)\n\n\nOrigin Destination Matrix 2022-23\nOrigin and destination matrix (ODM) financial year 2022-23\nOffice of Road and Rail (ORR)\nOpen (OGL3)\n\n\nOrigin Destination Matrix 2023-24\nOrigin and destination matrix (ODM) financial year 2023-24\nOffice of Road and Rail (ORR)\nOpen (OGL3)"
+  },
+  {
+    "objectID": "opendata.html#additional-network-rail-data",
+    "href": "opendata.html#additional-network-rail-data",
+    "title": "Open Data for public-transport visualisation",
+    "section": "Additional Network Rail Data",
+    "text": "Additional Network Rail Data\n\n\n\nProduct\nNote\nOwner\nLicence\n\n\n\n\nDaily Footfall\nCount in and out of the concourse area of Network Rail managed rail stations as CSV.\nNetwork Rail\nOpen (OGL3)\n\n\nSRAM Passenger Flow\nStrategic Rail Analysis Model (SRAM)for Great Britain uses infrastructure, timetable and public transport schedules to model rail passenger. See Passenger Load documentation.\nNetwork Rail\nOpen (OGL3)\n\n\nTrack Gradient\nR&D Track Gradient uses LiDAR to automatically generate track-level gradient data.\nNetwork Rail\nOpen (OGL3)\n\n\nWorkforce Headcount\nNetwork Rail headcount by functions for each period of the financial year.\nNetwork Rail\nOpen (OGL3)"
   }
 ]

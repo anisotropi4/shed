@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.55">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Open Data for public-transport visualisation – SHED</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">SHED</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">index</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./script.html"> 
+<span class="menu-text">python script</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#base-geography" id="toc-base-geography" class="nav-link active" data-scroll-target="#base-geography">Base Geography</a></li>
+  <li><a href="#base-rail-data" id="toc-base-rail-data" class="nav-link" data-scroll-target="#base-rail-data">Base Rail data</a></li>
+  <li><a href="#key-station-and-public-transport-data" id="toc-key-station-and-public-transport-data" class="nav-link" data-scroll-target="#key-station-and-public-transport-data">Key Station and Public Transport Data</a></li>
+  <li><a href="#office-of-road-and-rail-orign-and-destination-odm-data" id="toc-office-of-road-and-rail-orign-and-destination-odm-data" class="nav-link" data-scroll-target="#office-of-road-and-rail-orign-and-destination-odm-data">Office of Road and Rail Orign and Destination (ODM) data</a></li>
+  <li><a href="#additional-network-rail-data" id="toc-additional-network-rail-data" class="nav-link" data-scroll-target="#additional-network-rail-data">Additional Network Rail Data</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">Reference</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Open Data for public-transport visualisation</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>A set of open data and other resources that could be used to produce transport and related visualisations.</p>
+<section id="base-geography" class="level2">
+<h2 class="anchored" data-anchor-id="base-geography">Base Geography</h2>
+<p>The base geography and population data is based on:</p>
+<ul>
+<li>The base map of mainland Britain is derived from the <a href="https://hub.worldpop.org">WorldPop</a> base maps under <a href="https://creativecommons.org/licenses/by/4.0/">CC 4.0 by deed</a> retrieved 2023-09-07.</li>
+<li>OpenStreetMap data is then used to validate and also to identify 10 stations locations which is licensed under <a href="https://openstreetmap.org/copyright">CC-BY-SA 2.0</a> through the <a href="https://overpass-turbo.eu/">OverPassAPI Turbo</a> service.</li>
+</ul>
+</section>
+<section id="base-rail-data" class="level2">
+<h2 class="anchored" data-anchor-id="base-rail-data">Base Rail data</h2>
+<p>These base data consist of the centre-line or network track-model, Network Rail location codes, plus the CIF format timetable and VSTP updates.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Note</th>
+<th style="text-align: left;">Owner</th>
+<th style="text-align: left;">Licence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://raildata.org.uk/dashboard/dataProduct/P-d6c0c7ee-6743-4999-9b9e-d2dd39585bdb/overview">Track Model</a></td>
+<td style="text-align: left;">Railway network model Shapefile with link, node, reference lines and waymark layers. See <a href="https://raildata.org.uk/dataProduct/P-d6c0c7ee-6743-4999-9b9e-d2dd39585bdb/documentation">Open Data Technical Specification</a>.</td>
+<td style="text-align: left;"><a href="https://www.networkrail.co.uk/who-we-are/transparency-and-ethics/transparency/open-data-feeds/">Network Rail</a></td>
+<td style="text-align: left;">Open (OGL3)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://raildata.org.uk/dashboard/dataProduct/P-9d26e657-26be-496b-b669-93b217d45859/overview">CORPUS</a></td>
+<td style="text-align: left;">Lookup codes for rail stations from the CORPUS system (Codes for Operations, Retail &amp; Planning – a Unified Solution). See <a href="https://wiki.openraildata.com/index.php/Reference_Data#CORPUS:_Location_Reference_Data">OpenRailData wiki</a></td>
+<td style="text-align: left;"><a href="https://www.networkrail.co.uk/who-we-are/transparency-and-ethics/transparency/open-data-feeds/">Network Rail</a></td>
+<td style="text-align: left;">Open (OGL3)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://raildata.org.uk/dashboard/dataProduct/P-dbd92416-2f09-4f72-ad42-d53bbfec50f3/overview">Schedule</a></td>
+<td style="text-align: left;">Daily train schedule extract and updates from the national Integrated Train Planning System in Common InterFace (CIF) format. See <a href="https://wiki.openraildata.com/index.php/SCHEDULE">OpenRailData wiki</a></td>
+<td style="text-align: left;"><a href="https://www.networkrail.co.uk/who-we-are/transparency-and-ethics/transparency/open-data-feeds/">Network Rail</a></td>
+<td style="text-align: left;">Open (OGL3)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://raildata.org.uk/dashboard/dataProduct/P-3cc7c8b3-a311-406b-85ed-8032c60f1b29/overview">Very Short-Term Planning (VSTP)</a></td>
+<td style="text-align: left;">Real-time train schedules created via the Very Short Term Plan (VSTP) process. See <a href="https://wiki.openraildata.com/index.php/VSTP">OpenRailData wiki</a></td>
+<td style="text-align: left;"><a href="https://www.networkrail.co.uk/who-we-are/transparency-and-ethics/transparency/open-data-feeds/">Network Rail</a></td>
+<td style="text-align: left;">Open (OGL3)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="key-station-and-public-transport-data" class="level2">
+<h2 class="anchored" data-anchor-id="key-station-and-public-transport-data">Key Station and Public Transport Data</h2>
+<p>These data are the National Passenger Transport Access Node (NaPTAN) and Transport Gazette for Great Britain.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Note</th>
+<th style="text-align: left;">Owner</th>
+<th style="text-align: left;">Licence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://beta-naptan.dft.gov">NaPTAN &amp; NPTG</a></td>
+<td style="text-align: left;">This CSV and XML API contains information for all passenger transport nodes including rail, bus-stops, ferry terminals and airports. <a href="http://www.naptan.org.uk/schema/2.4/doc/NaPTANSchemaGuide-2.4-v0.57.pdf">PDF user guide</a></td>
+<td style="text-align: left;"><a href="https://findtransportdata.dft.gov.uk/">Department for Transport (DfT)</a></td>
+<td style="text-align: left;">Open (OGL3)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://dataportal.orr.gov.uk/statistics/infrastructure-and-environment/rail-infrastructure-and-assets/table-6329-station-attributes-for-all-mainline-stations/">Station attributes for all mainline stations in GB</a></td>
+<td style="text-align: left;">Table 6329: Station attributes for all mainline stations, Great Britain as ODS file.</td>
+<td style="text-align: left;"><a href="https://dataportal.orr.gov.uk/">Office of Road and Rail (ORR)</a></td>
+<td style="text-align: left;">Open (OGL3)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://raildata.org.uk/dashboard/dataProduct/P-027a0f6c-b6dc-46eb-b743-5c6e73137aaf/overview">Stations Reference Data</a></td>
+<td style="text-align: left;">Geographic station names output from journey planning in XML format file.</td>
+<td style="text-align: left;"><a href="https://raildata.org.uk/dashboard/partnerDetails/1010/details">Rail Development Group (RDG)</a></td>
+<td style="text-align: left;">Open</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://raildata.org.uk/dashboard/dataProduct/P-88ffe920-471c-4fd9-8e0d-95d5b9b7a257/overview">Knowledgebase Stations data feed</a></td>
+<td style="text-align: left;">A station data-feed which includes information on train stations in XML format API.</td>
+<td style="text-align: left;"><a href="https://raildata.org.uk/dashboard/partnerDetails/1010/details">Rail Development Group (RDG)</a></td>
+<td style="text-align: left;">Open</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="office-of-road-and-rail-orign-and-destination-odm-data" class="level2">
+<h2 class="anchored" data-anchor-id="office-of-road-and-rail-orign-and-destination-odm-data">Office of Road and Rail Orign and Destination (ODM) data</h2>
+<p>These are the base Origin and Destination Matrix (ODM) data showing journeys between all pairs of mainline stations in Great Britain used in <a href="https://github.com/anisotropi4/kingfisher/">ODM visualisations</a>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Note</th>
+<th style="text-align: left;">Owner</th>
+<th style="text-align: left;">Licence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://raildata.org.uk/dashboard/dataProduct/P-c1b1cbbc-9fc5-425e-a0c9-9aa6cb5c619f/overview">Origin Destination Matrix 2018-19</a></td>
+<td style="text-align: left;">Origin and destination matrix (ODM) financial year 2018-19</td>
+<td style="text-align: left;"><a href="https://dataportal.orr.gov.uk/">Office of Road and Rail (ORR)</a></td>
+<td style="text-align: left;">Open (OGL3)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://raildata.org.uk/dashboard/dataProduct/P-ea6deaac-fae4-4708-8307-36ad13732a7b/overview">Origin Destination Matrix 2019-20</a></td>
+<td style="text-align: left;">Origin and destination matrix (ODM) financial year 2019-20</td>
+<td style="text-align: left;"><a href="https://dataportal.orr.gov.uk/">Office of Road and Rail (ORR)</a></td>
+<td style="text-align: left;">Open (OGL3)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://raildata.org.uk/dashboard/dataProduct/P-ba359b71-58c9-4f42-8c9d-e02e8e3a4330/overview">Origin Destination Matrix 2020-21</a></td>
+<td style="text-align: left;">Origin and destination matrix (ODM) financial year 2020-21</td>
+<td style="text-align: left;"><a href="https://dataportal.orr.gov.uk/">Office of Road and Rail (ORR)</a></td>
+<td style="text-align: left;">Open (OGL3)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://raildata.org.uk/dashboard/dataProduct/P-a9faf6fd-b31f-491c-935a-f4ab3ffa5890/overview">Origin Destination Matrix 2021-22</a></td>
+<td style="text-align: left;">Origin and destination matrix (ODM) financial year 2021-22</td>
+<td style="text-align: left;"><a href="https://dataportal.orr.gov.uk/">Office of Road and Rail (ORR)</a></td>
+<td style="text-align: left;">Open (OGL3)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://raildata.org.uk/dashboard/dataProduct/P-a839de9f-eafa-495e-92e3-ff23a33ad876/overview">Origin Destination Matrix 2022-23</a></td>
+<td style="text-align: left;">Origin and destination matrix (ODM) financial year 2022-23</td>
+<td style="text-align: left;"><a href="https://dataportal.orr.gov.uk/">Office of Road and Rail (ORR)</a></td>
+<td style="text-align: left;">Open (OGL3)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://raildata.org.uk/dashboard/dataProduct/P-420268d5-b082-469e-98e4-47d92f714bc6/overview">Origin Destination Matrix 2023-24</a></td>
+<td style="text-align: left;">Origin and destination matrix (ODM) financial year 2023-24</td>
+<td style="text-align: left;"><a href="https://dataportal.orr.gov.uk/">Office of Road and Rail (ORR)</a></td>
+<td style="text-align: left;">Open (OGL3)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="additional-network-rail-data" class="level2">
+<h2 class="anchored" data-anchor-id="additional-network-rail-data">Additional Network Rail Data</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Note</th>
+<th style="text-align: left;">Owner</th>
+<th style="text-align: left;">Licence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://raildata.org.uk/dashboard/dataProduct/P-ba403ccb-1d64-40a7-8a53-23e8d05e6026/overview">Daily Footfall</a></td>
+<td style="text-align: left;">Count in and out of the concourse area of Network Rail managed rail stations as CSV.</td>
+<td style="text-align: left;"><a href="https://www.networkrail.co.uk/">Network Rail</a></td>
+<td style="text-align: left;">Open (OGL3)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://raildata.org.uk/dashboard/dataProduct/P-62f7f4d0-8d19-48ff-916d-aa6d27549dd7/overview">SRAM Passenger Flow</a></td>
+<td style="text-align: left;">Strategic Rail Analysis Model (SRAM)for Great Britain uses infrastructure, timetable and public transport schedules to model rail passenger. See <a href="https://raildata.org.uk/dashboard/dataProduct/P-62f7f4d0-8d19-48ff-916d-aa6d27549dd7/documentation">Passenger Load</a> documentation.</td>
+<td style="text-align: left;"><a href="https://www.networkrail.co.uk/">Network Rail</a></td>
+<td style="text-align: left;">Open (OGL3)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://raildata.org.uk/dashboard/dataProduct/P-9931256f-ae3f-4475-abc5-e92842e1103b/overview">Track Gradient</a></td>
+<td style="text-align: left;">R&amp;D Track Gradient uses LiDAR to automatically generate track-level gradient data.</td>
+<td style="text-align: left;"><a href="https://www.networkrail.co.uk">Network Rail</a></td>
+<td style="text-align: left;">Open (OGL3)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://raildata.org.uk/dashboard/dataProduct/P-597c224e-df7a-4511-a4a7-0dcb4e6cd94b/overview">Workforce Headcount</a></td>
+<td style="text-align: left;">Network Rail headcount by functions for each period of the financial year.</td>
+<td style="text-align: left;"><a href="https://www.networkrail.co.uk">Network Rail</a></td>
+<td style="text-align: left;">Open (OGL3)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="reference" class="level1">
+<h1>Reference</h1>
+<p>Resources and other reference material used for talks and visualisations</p>
+<div>
+<ol class="example" type="1">
+<li><a href="https://en.wikipedia.org/wiki/International_Klein_Blue">International Klein Blue (#002FA7)</a></li>
+<li><a href="https://www.strathpefferjunction.com/british-railway-typefaces-fonts/">Rail Alphabet</a>, description and download</li>
+<li>SPSmiler, <a href="https://commons.wikimedia.org/wiki/File:Why_London_Underground_is_nicknamed_The_Tube.jpg">“London Underground Tube”</a></li>
+<li><a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0133">Homer, Iliad</a>, Perseus Digital Library, accessed 4 May 2022</li>
+<li><a href="https://www.gov.uk/government/statistics/transport-statistics-great-britain-2021/transport-statistics-great-britain-2021">Transport Statistics Department for Transport</a></li>
+<li>Department for Business, <a href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2021">Energy &amp; Industry Strategy</a></li>
+<li><a href="https://wiki.openraildata.com/index.php/Main_Page">Open Rail Data wiki</a></li>
+<li>Rail Development Group <a href="https://www.raildeliverygroup.com/media-centre-docman/acop/284-rdgconceptofoperations-stockandcrewv1-0-reformat/file.html">“Concept of Operations – Stock and Crew System”</a>, (RDG-CONOPS/NTI/002), Issue 1.1, January 2021</li>
+<li><a href="https://www.networkrail.co.uk/industry-and-commercial/information-for-operators/national-electronic-sectional-appendix/">National Electronic Sectional Appendix</a> (NESA)</li>
+<li>Extract <a href="https://github.com/anisotropi4/nesa">NESA table data</a></li>
+<li>Department for Transport <a href="https://www.gov.uk/government/statistical-data-sets/energy-and-environment-data-tables-env">Energy and environment: data tables (ENV0201)</a></li>
+<li><a href="https://human-settlement.emergency.copernicus.eu/">Global Human Settlement layer</a>, data licensed under <a href="https://creativecommons.org/licenses/by/4.0/">creative commons 4.0</a></li>
+<li><a href="https://openstreetmap.org">OpenStreetMap</a>, data licensed under <a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Database License (ODbL) v1.0</a></li>
+<li><a href="https://Python.org">python</a> language, licensed under <a href="https://docs.python.org/3/license.html">PSF for python 3</a></li>
+<li><a href="https://pandas.pydata.org/">Pandas</a>, licensed under BSD 3-clause license</li>
+<li><a href="https://geopandas.org/">GeoPandas</a>, licensed under BSD 3-clause license</li>
+<li>Department for Transport (DfT) <a href="https://www.gov.uk/government/publications/great-british-railways-williams-shapps-plan-for-rail">“Great British Railways: Williams-Shapps plan for rail”</a></li>
+<li><a href="https://electricrailmap.gitlab.io/">UK Electrification map</a></li>
+<li>Railway Industry Association <a href="https://www.riagb.org.uk/RIA/Newsroom/Publications%20Folder/Why_Rail_Electrification_Report.aspx">“Why Rail Electrification”</a>, 2021</li>
+<li>European Agency for Railways (ERA) <a href="https://www.era.europa.eu/content/era-report-fostering-railway-sector-through-european-green-deal-part-2-freight_en">“Fostering Rail Through Green Deal – part 2 Freight”</a>, 2021</li>
+<li>RailNet Europe, <a href="https://rne.eu/sales-timetabling/ttr">“Timetabling and Capacity Redesign (TTR)”</a>, 2022</li>
+<li>Network Rail, <a href="https://www.networkrail.co.uk/wp-content/uploads/2020/08/Rail-freight-forecasts-Scenarios-for-2033-34-and-2043-44.pdf">“Rail freight forecasts Scenarios for 2033-34 and 2043-44”</a>, 2016</li>
+<li><a href="https://shapely.readthedocs.io/en/stable/">Shapely</a> python package for the manipulation and analysis of planar geometric objects, licensed under BSD 3-clause license</li>
+<li>Python <a href="https://rasterio.readthedocs.io/en/latest/index.html">Rasterio</a> package for reading raster datasets, under the <a href="https://rasterio.readthedocs.io/en/stable/intro.html">Rasterio license</a></li>
+<li>Python <a href="https://pysal.org/tobler">Tobler</a> interpolation and mapping package, under BSD license</li>
+<li><a href="https://qgis.org">QGIS</a>, a Geographic Information System (GIS), licensed under the Attribution-ShareAlike 3.0 license</li>
+<li><a href="https://geoffboeing.com/publications/osmnx-complex-street-networks/">OSMnx: New Methods for Acquiring, Constructing, Analyzing, and Visualizing Complex Street Networks</a>, Computers, Environment and Urban Systems&nbsp;65, 126-139. Boeing, G. 2017.</li>
+<li><a href="https://github.com/uber/h3-py">Uber H3</a> Uber python hexagon library, licensed under the Apache license 2.0</li>
+<li>National Rail Enquires (NRE) <a href="https://raildata.org.uk/dashboard/dataProduct/P-9568f5b6-598e-48c6-8754-cd8c3a552d1c/overview">Transport Fixed Links</a> with additional fixed links between Zone1/DLR locations to help origin and destination journey planning</li>
+</ol>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/anisotropi4@anisotropi4\.github\.io\/shed\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
