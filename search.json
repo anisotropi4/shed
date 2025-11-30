@@ -61,5 +61,47 @@
     "title": "python script",
     "section": "",
     "text": "A simple “Hello, world!” style example\n\n\nHello, world!"
+  },
+  {
+    "objectID": "30daymapchallenge.html",
+    "href": "30daymapchallenge.html",
+    "title": "30 Day Map Challenge",
+    "section": "",
+    "text": "This is a retrospective of my 30 Day Map Challenge. In a reckless moment on the 1st November 2025 I thought I would have a go a making a few maps and see how far I’d get to before stopiing. Some four-and-a-bit weeks later, this is what I got and the associated social-media Fosstodon toots."
+  },
+  {
+    "objectID": "30daymapchallenge.html#points",
+    "href": "30daymapchallenge.html#points",
+    "title": "30 Day Map Challenge",
+    "section": "2025-11-01 “Points”",
+    "text": "2025-11-01 “Points”\n\n\n\n\n\n\nIn a vain attempt for #30MapsInAMonth here is a “Eurocentric” world map EPSG:3034 equal area projection using on WorldPopProject 1km² data showing projected population change between 2020 and 2030.\n#30DayMapChallenge"
+  },
+  {
+    "objectID": "30daymapchallenge.html#lines",
+    "href": "30daymapchallenge.html#lines",
+    "title": "30 Day Map Challenge",
+    "section": "2025-11-02 “Lines”",
+    "text": "2025-11-02 “Lines”\n\n\n\n\n\n\nFor the second #30MapsInAMonth here is a map showing the heavy-rail network track-model and stations centred on the East Coast Mainline between South Yorkshire and the Fens. This uses the Rail Data Marketplace centre-line track-model published by Network Rail and the Office of Road and Rail (ORR) list of active stations.\n#rail #network #stations #30DayMapChallenge #EveryoneHomeSafeEveryDay"
+  },
+  {
+    "objectID": "30daymapchallenge.html#outro-to-the-intro",
+    "href": "30daymapchallenge.html#outro-to-the-intro",
+    "title": "30 Day Map Challenge",
+    "section": "2025-11-02 Outro to the Intro",
+    "text": "2025-11-02 Outro to the Intro\nAs I then said at the time:\n\n\n\n\n\n\nI’m never sure about this, but this year I decided to prepare for the #30DayMapChallenge by looking at things I have mapped over the years. My conclusion is I suffer from a rather myopic approach to the topic I visualise… #rail #Infrastructure #population #Europe\n\n\n\nFollowed by the revelation that there was a bit more to this than I had thought:\n\n\n\n\n\n\nI’ve now discovered that there are meant to be “themes” for each day in the #30DayMapChallenge but as that’s beyond me, it looks like I will be running a #fringe event instead…"
+  },
+  {
+    "objectID": "30daymapchallenge.html#polygons",
+    "href": "30daymapchallenge.html#polygons",
+    "title": "30 Day Map Challenge",
+    "section": "2025-11-03 “Polygons”",
+    "text": "2025-11-03 “Polygons”\n\n\n\n\n\n\nFor the third #30MapsInAMonth are three theoretical European full-automated luxury high-speed heavy-rail network maps based on population distribution. This uses H3 hierarchical hexagon library to aggregate @WorldPopProject population data into #polygons, creating a maximum spanning tree network using population-to-population edge-weights and names for major urban centres added using @EUCommission Global Human Settlement Layer data.\n#rail #network #HighSpeedRail #stations #30DayMapChallenge"
+  },
+  {
+    "objectID": "30daymapchallenge.html#data",
+    "href": "30daymapchallenge.html#data",
+    "title": "30 Day Map Challenge",
+    "section": "2025-11-04 “Data”",
+    "text": "2025-11-04 “Data”\n\n\n\n\n\n\nFor the fourth #30MapsInAMonth is a map also based on population distribution and the shortest walking route to routes from the 2021 Office for National Statistics census Output Area locations to the stations centred on Sheffield. The line width is proportional to the aggregated population and the routes are based on based on @openstreetmap path data, and the station locations on Office of Rail and Road (ORR) active station list\n#rail #network #hinterland #stations #30DayMapChallenge"
   }
 ]

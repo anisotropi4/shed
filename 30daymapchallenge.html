@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.340">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>SHED - 30 Day Map Challenge</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">SHED</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">index</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./opendata.html" rel="" target="">
+ <span class="menu-text">open data</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./script.html" rel="" target="">
+ <span class="menu-text">python script</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./30daymapchallenge.html" rel="" target="" aria-current="page">
+ <span class="menu-text">30 day maps</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#points" id="toc-points" class="nav-link active" data-scroll-target="#points">2025-11-01 “Points”</a></li>
+  <li><a href="#lines" id="toc-lines" class="nav-link" data-scroll-target="#lines">2025-11-02 “Lines”</a></li>
+  <li><a href="#outro-to-the-intro" id="toc-outro-to-the-intro" class="nav-link" data-scroll-target="#outro-to-the-intro">2025-11-02 Outro to the Intro</a></li>
+  <li><a href="#polygons" id="toc-polygons" class="nav-link" data-scroll-target="#polygons">2025-11-03 “Polygons”</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">2025-11-04 “Data”</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">30 Day Map Challenge</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>This is a retrospective of my 30 Day Map Challenge. In a reckless moment on the 1<sup>st</sup> November 2025 I thought I would have a go a making a few maps and see how far I’d get to before stopiing. Some four-and-a-bit weeks later, this is what I got and the associated social-media <a href="https://fosstodon.org/deck/@wnd">Fosstodon toots</a>.</p>
+<section id="points" class="level2">
+<h2 class="anchored" data-anchor-id="points"><a href="https://fosstodon.org/@wnd/115476758004810874">2025-11-01 “Points”</a></h2>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>In a vain attempt for #30MapsInAMonth here is a “Eurocentric” world map EPSG:3034 equal area projection using on <a href="">WorldPopProject</a> 1km² data showing projected population change between 2020 and 2030.</p>
+<p>#30DayMapChallenge</p>
+</div>
+</div>
+</div>
+<p><img src="30-day/01/eurocentrum-01.png" class="lightbox img-fluid" alt="A Eurocentric &quot;world&quot; map based on the EPSG:3034 equal area projection showing population change between 2020 and 2030 based on WorldPop data. White is areas of low or no population, the colour is then in population per km² with purple > -100*, grey between -10 and 10, green > 10, yellow > 100* that is a reduction"></p>
+</section>
+<section id="lines" class="level2">
+<h2 class="anchored" data-anchor-id="lines"><a href="https://fosstodon.org/@wnd/115479839907939776">2025-11-02 “Lines”</a></h2>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>For the second #30MapsInAMonth here is a map showing the heavy-rail network track-model and stations centred on the East Coast Mainline between South Yorkshire and the Fens. This uses the Rail Data Marketplace centre-line track-model published by Network Rail and the Office of Road and Rail (ORR) list of active stations.</p>
+<p>#rail #network #stations #30DayMapChallenge #EveryoneHomeSafeEveryDay</p>
+</div>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="30-day/02/south-yorkshire-fens-01.png" class="lightbox figure-img" style="height:20cm" alt="A map showing the heavy rail network model as orange lines with stations as layers orange hexagons. The map centred on the East Coast Main Line between South Yorkshire and the Fens"></p>
+</figure>
+</div>
+</section>
+<section id="outro-to-the-intro" class="level2">
+<h2 class="anchored" data-anchor-id="outro-to-the-intro">2025-11-02 Outro to the Intro</h2>
+<p>As I then said <a href="https://fosstodon.org/@wnd/115481179128707599">at the time:</a></p>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>I’m never sure about this, but this year I decided to prepare for the #30DayMapChallenge by looking at things I have mapped over the years. My conclusion is I suffer from a rather myopic approach to the topic I visualise… #rail #Infrastructure #population #Europe</p>
+</div>
+</div>
+</div>
+<p>Followed by the revelation that there was <a href="https://fosstodon.org/@wnd/115481320820744649">a bit more to this than I had thought:</a></p>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>I’ve now discovered that there are meant to be “themes” for each day in the #30DayMapChallenge but as that’s beyond me, it looks like I will be running a #fringe event instead…</p>
+</div>
+</div>
+</div>
+</section>
+<section id="polygons" class="level2">
+<h2 class="anchored" data-anchor-id="polygons"><a href="https://fosstodon.org/@wnd/115484726949074623">2025-11-03 “Polygons”</a></h2>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>For the third #30MapsInAMonth are three theoretical European full-automated luxury high-speed heavy-rail network maps based on population distribution. This uses H3 hierarchical hexagon library to aggregate <span class="citation" data-cites="WorldPopProject">@WorldPopProject</span> population data into #polygons, creating a maximum spanning tree network using population-to-population edge-weights and names for major urban centres added using <span class="citation" data-cites="EUCommission">@EUCommission</span> Global Human Settlement Layer data.</p>
+<p>#rail #network #HighSpeedRail #stations #30DayMapChallenge</p>
+</div>
+</div>
+</div>
+<p><img src="30-day/03/mook-01-30.png" class="lightbox img-fluid" style="width:45.0%" alt="A map of Europe showing a theoretical high-speed rail network based on population distribution. The high-speed lines are drawn in orange between population centres with colour and line width proportional to the number of people who would use that route based on aggregating WorldPop population data into a coarse set of h3 hexagons"></p>
+<p><img src="30-day/03/mook-03-00-name.png" class="lightbox img-fluid" style="width:45.0%" alt="A map of Europe showing a theoretical high-speed rail network based on population distribution. The high-speed lines are drawn in orange between named population centres with colour and line width proportional to the number of people who would use that route based on aggregating WorldPop population data into a more detailed set of h3 hexagons"></p>
+<p><img src="30-day/03/mook-03-30-name.png" class="lightbox img-fluid" style="width:45.0%" alt="A map of Europe showing a theoretical high-speed rail network based on population distribution. The high-speed lines are drawn in orange between named population centres with colour and line width proportional to the number of people who would use that route based on aggregating WorldPop population data into a more detailed set of h3 hexagons rotated by 30°"></p>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data"><a href="https://fosstodon.org/@wnd/115490489092372541">2025-11-04 “Data”</a></h2>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>For the fourth #30MapsInAMonth is a map also based on population distribution and the shortest walking route to routes from the 2021 Office for National Statistics census Output Area locations to the stations centred on Sheffield. The line width is proportional to the aggregated population and the routes are based on based on <span class="citation" data-cites="openstreetmap">@openstreetmap</span> path data, and the station locations on Office of Rail and Road (ORR) active station list</p>
+<p>#rail #network #hinterland #stations #30DayMapChallenge</p>
+</div>
+</div>
+</div>
+<p><img src="30-day/04/sheffield-01.png" class="lightbox img-fluid" style="width:80.0%" data-align="center" alt="A map showing the shortest walking routes from the 2021 census Output Area locations to the stations near Sheffield, with Sheffield in the centre as orange lines. The line width is proportional to the aggregated population and the routes are based on based on the OpenStreetMap path and road data."></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
