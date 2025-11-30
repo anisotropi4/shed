@@ -4,6 +4,7 @@ project:
     - index.qmd
     - opendata.qmd
     - script.qmd
+    - 30daymapchallenge.qmd
   output-dir: docs
 
 format:
@@ -21,6 +22,8 @@ website:
         text: "open data"
       - href: script.qmd
         text: "python script"
+      - href: 30daymapchallenge.qmd
+        text: "30 day maps"        
   site-url: "https://anisotropi4@anisotropi4.github.io/shed/" # makes site links work on your remote site
 
 execute:
