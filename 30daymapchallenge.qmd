@@ -1,0 +1,84 @@
+---
+title: "30 Day Map Challenge"
+toc: true
+execute:
+  cache: true
+  message: false
+  warning: false
+  eval: false
+editor:
+  markdown:
+    wrap: 80
+format:
+  html:
+    code-overflow: wrap
+    citations-hover: false
+    footnotes-hover: false
+    crossrefs-hover: false
+---
+
+This is a retrospective of my 30 Day Map Challenge. In a reckless moment on the 1^st^ November 2025 I thought I would have a go a making a few maps and see how far I'd get to before stopiing. Some four-and-a-bit weeks later, this is what I got and the associated social-media [Fosstodon toots](https://fosstodon.org/deck/@wnd).
+
+## [2025-11-01 "Points"](https://fosstodon.org/@wnd/115476758004810874) 
+
+::: {.callout-note appearance="minimal"}
+In a vain attempt for #30MapsInAMonth here is a "Eurocentric" world map EPSG:3034 equal area projection using on [WorldPopProject]() 1km² data showing projected population change between 2020 and 2030.
+
+#30DayMapChallenge
+:::
+
+![](30-day/01/eurocentrum-01.png){fig-alt="A Eurocentric \"world\" map based on the EPSG:3034 equal area projection showing population change between 2020 and 2030 based on WorldPop data. White is areas of low or no population, the colour is then in population per km² with purple > -100*, grey between -10 and 10, green > 10, yellow > 100* that is a reduction" .lightbox}
+
+
+## [2025-11-02 "Lines"](https://fosstodon.org/@wnd/115479839907939776) 
+
+::: {.callout-note appearance="minimal"}
+For the second #30MapsInAMonth here is a map showing the heavy-rail network track-model and stations centred on the East Coast Mainline between South Yorkshire and the Fens. This uses the Rail Data Marketplace centre-line track-model published by Network Rail and the Office of Road and Rail (ORR) list of active stations.
+
+#rail #network #stations #30DayMapChallenge #EveryoneHomeSafeEveryDay
+:::
+
+![](30-day/02/south-yorkshire-fens-01.png){height=20cm fig-align="center" fig-alt="A map showing the heavy rail network model as orange lines with stations as layers orange hexagons. The map centred on the East Coast Main Line between South Yorkshire and the Fens" .lightbox}
+
+## 2025-11-02 Outro to the Intro 
+
+As I then said [at the time:](https://fosstodon.org/@wnd/115481179128707599)
+
+::: {.callout-note appearance="minimal"}
+I'm never sure about this, but this year I decided to prepare for the #30DayMapChallenge by looking at things I have mapped over the years. My conclusion is I suffer from a rather myopic approach to the topic I visualise... #rail #Infrastructure #population #Europe
+
+:::
+
+Followed by the revelation that there was [a bit more to this than I had thought:](https://fosstodon.org/@wnd/115481320820744649)
+
+::: {.callout-note appearance="minimal"}
+I've now discovered that there are meant to be "themes" for each day in the #30DayMapChallenge but as that's beyond me, it looks like I will be running a #fringe event instead...
+:::
+
+## [2025-11-03 "Polygons"](https://fosstodon.org/@wnd/115484726949074623)
+
+::: {.callout-note appearance="minimal"}
+For the third #30MapsInAMonth are three theoretical European full-automated luxury high-speed heavy-rail network maps based on population distribution. This uses H3 hierarchical hexagon library to aggregate @WorldPopProject population data into #polygons, creating a maximum spanning tree network using population-to-population edge-weights and names for major urban centres added using @EUCommission  Global Human Settlement Layer data.
+
+#rail #network #HighSpeedRail #stations #30DayMapChallenge
+:::
+
+![](30-day/03/mook-01-30.png){width=45% fig-alt="A map of Europe showing a theoretical high-speed rail network based on population distribution. The high-speed lines are drawn in orange between population centres with colour and line width proportional to the number of people who would use that route based on aggregating WorldPop population data into a coarse set of h3 hexagons" .lightbox}
+
+![](30-day/03/mook-03-00-name.png){width=45% fig-alt="A map of Europe showing a theoretical high-speed rail network based on population distribution. The high-speed lines are drawn in orange between named population centres with colour and line width proportional to the number of people who would use that route based on aggregating WorldPop population data into a more detailed set of h3 hexagons" .lightbox}
+
+![](30-day/03/mook-03-30-name.png){width=45% fig-alt="A map of Europe showing a theoretical high-speed rail network based on population distribution. The high-speed lines are drawn in orange between named population centres with colour and line width proportional to the number of people who would use that route based on aggregating WorldPop population data into a more detailed set of h3 hexagons rotated by 30°" .lightbox}
+
+
+
+
+## [2025-11-04 "Data"](https://fosstodon.org/@wnd/115490489092372541) 
+
+::: {.callout-note appearance="minimal"}
+For the fourth #30MapsInAMonth is a map also based on population distribution and the shortest walking route to routes from the 2021 Office for National Statistics census Output Area locations to the stations centred on Sheffield. The line width is proportional to the aggregated population and the routes are based on based on @openstreetmap path data, and the station locations on Office of Rail and Road (ORR) active station list
+
+#rail #network #hinterland #stations #30DayMapChallenge
+:::
+
+![](30-day/04/sheffield-01.png){align=center width=80% fig-alt="A map showing the shortest walking routes from the 2021 census Output Area locations to the stations near Sheffield, with Sheffield in the centre as orange lines. The line width is proportional to the aggregated population and the routes are based on based on the OpenStreetMap path and road data." .lightbox}
+
