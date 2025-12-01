@@ -229,22 +229,42 @@ For the fourth #30MapsInAMonth is a map also based on population distribution an
 
 It was at this point that I could then see the end and had something prepared for everything outwith "Black" and "Makeover".
 
-I had a steer on "Black" based on air-pollution data from the [UK National Atmospheric Emissions Inventory (NAEI)](https://naei.energysecurity.gov.uk/).
+I had a steer on "Black" based on air-pollution data from the [UK National Atmospheric Emissions Inventory](https://naei.energysecurity.gov.uk/).
 
-My thought for the "Makeover" was to then redo the [Fully Automated Luxury European High-Speed Railway from 2025-11-03](https://fosstodon.org/@wnd/115484726949074623) but went with a recut with a global electrification map. Which was more popular then the theoretical high-speed rail map, and vox populari vox dei and all that.
+My thought for the "Makeover" was to then redo the [Fully Automated Luxury European High-Speed Railway from 2025-11-03](https://fosstodon.org/@wnd/115484726949074623) but went with a recut with a global electrification map, of the . Which was more popular then the theoretical high-speed rail map, and vox populari vox dei and all that.
 
 
 ### [2025-11-22 "Natural Earth"]()
+
 ::: {.callout-note appearance="minimal"}
+For the twenty second #30MapsInAMonth are three maps showing [Natural earth data](https://www.naturalearthdata.com/).
+
+The first map show the 10m urban layer for the low countries, the second two the Islands and Northern Island and Europe with heavy rail lines.
+
+#NaturalEarthData #Europe #Population #OpenData #30dayMapChallenge
+:::
+
+![](30-day/22/ne-paybas-01.png){fig-align=center width=80% fig-alt="Natural Earth Data urban 10m population data for the low countries coloured in viridis by zoom level. Which seems to link to population density" .lightbox}
+
+::: {layout="[65,35]"}
+![](30-day/22/ne-europe-01.png){fig-align=center width=80% fig-alt="Natural Earth Data urban 10m population data for Europe coloured in Viridis by zoom level. Which seems to link to population density, plus rail lines in orange" .lightbox}
+
+![](30-day/22/ne-ine-01.png){fig-align=center width=80% fig-alt="Natural Earth Data urban 10m population data for the Islands of Northern Europe coloured in Viridis by zoom level. Which seems to link to population density, plus rail lines in orange" .lightbox}
 
 :::
 
-![](30-day/22/){fig-align=center width=80% fig-alt="" .lightbox}
-
-### [2025-11-23 "Process"]()
+### [2025-11-23 "Process"](https://fosstodon.org/@wnd/115598674917123910)
 
 ::: {.callout-note appearance="minimal"}
+For the twenty third #30MapsInAMonth here is are two talks about the intent and give some details as to how a number of visualisations were made. 
 
+Here are [#OpenData resources](https://anisotropi4.github.io/shed/opendata.html) used in these visualisations
+
+The first is a Leeds Digital festival talk about a [fully automated European luxury high-speed railway](https://youtu.be/xFLuUO3YBBE)
+
+The second is about visualisation of [Office of Rail and Road data](https://youtu.be/CZm-6ahj1TU)
+
+#WhyDoIMakeMaps #30dayMapChallenge
 :::
 
 ![](30-day/23/){fig-align=center width=80% fig-alt="" .lightbox}
@@ -252,7 +272,7 @@ My thought for the "Makeover" was to then redo the [Fully Automated Luxury Europ
 ### [2025-11-24 "Places and names"](https://fosstodon.org/@wnd/115603864392138531)
 
 ::: {.callout-note appearance="minimal"}
-For the twenty third #30MapsInAMonth here is a map that shows the stations where the aggregated number of people living within the shortest walking distance to a heavy rail station is greater that 50k. The station name is scaled based on this aggregated number.
+For the twenty fourth #30MapsInAMonth here is a map that shows the stations where the aggregated number of people living within the shortest walking distance to a heavy rail station is greater that 50k. The station name is scaled based on this aggregated number.
 
 #Passenger #Rail #ShortestTravel #Station #30dayMapChallenge
 :::
@@ -263,14 +283,13 @@ For the twenty third #30MapsInAMonth here is a map that shows the stations where
 I find it interesting that, although there is a higher population in the South East and North West, this would suggest relatively fewer stations serving the population along the route of the Midlands Main Line (MML) or in the North East around the Tyne and Tees.
 :::
 
-#### [2025-11-26 Hardest Visualisation](https://fosstodon.org/@wnd/115604095777796208)
+#### [2025-11-24 Hardest Visualisation](https://fosstodon.org/@wnd/115604095777796208)
 
-This visualation caused the most debate its means, where I found it useful to refer to the post where
+This visualisation caused the most debate its means, where I found it useful to refer to the post where
 
 ::: {.callout-note appearance="minimal"}
-(It's based on a dataset where I worked out the shortest walking distances from the OA census and/or WorldPop 1km2 centroids data to heavy rail stations to end up with a [watershed diagram as shared earlier](https://fosstodon.org/@wnd/115558909793335614) If you then add up the population served by station and rank them, you get this...)
+(It's based on a dataset where I worked out the shortest walking distances from the OA census and/or WorldPop 1km^2^ centroids data to heavy rail stations to end up with a [watershed diagram as shared earlier](https://fosstodon.org/@wnd/115558909793335614) If you then add up the population served by station and rank them, you get this...)
 :::
-
 
 ### [2025-11-25 "Hexagons"](https://fosstodon.org/@wnd/115609670872835531)
 
