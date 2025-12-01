@@ -17,9 +17,15 @@ format:
     crossrefs-hover: false
 ---
 
-This is a retrospective of my 30 Day Map Challenge. In a reckless moment on the 1^st^ November 2025 I thought I would have a go a making a few maps and see how far I'd get to before stopiing. Some four-and-a-bit weeks later, this is what I got and the associated social-media [Fosstodon](https://fosstodon.org/deck/@wnd) toots.
+## It Starts
+
+This a summary of my 30 Day Map Challenge 2025. In a reckless moment on the 1^st^ November 2025 I thought I would have a go a making a few maps and see how far I'd get to before stopiing. Some four-and-a-bit weeks later, this is what I got and the associated social-media [Fosstodon](https://fosstodon.org/deck/@wnd) toots.
 
 ## Week 1
+
+### 2025-11-01 Intro to the Intro
+
+I can't remember what motivated to do this. Or even what started this, other than I must have seem someone toot or post about the #30DayMapChallenge2025 and thoughts I could start and then give up when I felt like it.
 
 ### [2025-11-01 "Points"](https://fosstodon.org/@wnd/115476758004810874)
 
@@ -316,11 +322,11 @@ This was inspired by my daughter's final year degree project and, although rare,
 :::
 
 ::: {layout-ncol=2}
-![](30-day/18/){fig-align=center width=80% fig-alt="An animated simulation of a theoretical solar system with two planets showing the trajectory of the two planets as red and green arcs and the central mass as a blue cross. In this video the chaotic movement of the two planets causing the two planets to collide." .lightbox}
+![](30-day/18/collide.gif){fig-align=center width=80% fig-alt="An animated simulation of a theoretical solar system with two planets showing the trajectory of the two planets as red and green arcs and the central mass as a blue cross. In this video the chaotic movement of the two planets causing the two planets to collide." .lightbox}
 
 ![](30-day/18/v-crash.gif){fig-align=center width=80% fig-alt="An animated simulation of a theoretical solar system with two planets showing the trajectory of the two planets as red and green arcs and the central mass as a blue cross. In this video the chaotic movement of the two planets causes the green body to collide with the central star." .lightbox}
 
-![](30-day/18/){fig-align=center width=80% fig-alt="An animated simulation of a theoretical solar system with two planets showing the trajectory of the two planets as red and green arcs and the central mass as a blue cross. In this video the chaotic movement of the system causing the green planets to escape the solar system.." .lightbox}
+![](30-day/18/uv-comet.gif){fig-align=center width=80% fig-alt="An animated simulation of a theoretical solar system with two planets showing the trajectory of the two planets as red and green arcs and the central mass as a blue cross. In this video the chaotic movement of the system causing the green planets to escape the solar system.." .lightbox}
 
 ![](30-day/18/normal.gif){fig-align=center width=80% fig-alt="An animated simulation of a theoretical solar system with two planets showing the trajectory of the two planets as red and green arcs and the central mass as a blue cross. In this video the chaotic movement of the system is not sufficiently large to cause anything other than a perturbation of the green planet." .lightbox}
 :::
@@ -584,14 +590,19 @@ While my plan was to make a global full-automated luxury high-speed railway for 
 Outwith the ORR ODM data map and they will get updated once next FY year's data is published...
 :::
 
-### [2025-11-30 Outro to the Outro](https://fosstodon.org/@wnd/115638242713133373)
+## [How It Ends](https://fosstodon.org/@wnd/115638242713133373)
 
-This has been hard work and probably took up more time than it should have. I have learnt stuff, and done bigger things that I had thought I could. Then again, quite a lot of what I had first thought I would post, I haven't often because it didn't fit the theme.
+This has been hard work and probably took up more time than it should have. I have done bigger things than I had thought I could. Then again, quite a lot of what I first thought I would post I haven't. Often because it didn't fit the theme.
 
-I also found myself at a point about a third-of-the-way through where I decided to get stuff made ahead of time. Which was good as it meant I finished the whole piece and had things to say each day that vaguely fitted the theme.
+I also found myself at a point about a half-way-through where I decided to get stuff made ahead of time. Which was good as it meant I finished the whole piece and had things to say each day that vaguely fitted the theme. However, this didn't help with the actual daily posting itself. Where a combination of social-media file-size and resolution limits, my inability to articulate what it is that I have just done in words, a wish to post insanely large images and the general [yak-shaving](https://en.wiktionary.org/wiki/yak_shaving) of getting animations to work was probably the hardest part for me. No fun. 
 
-However, this didn't help with the actual daily posting itself. Where a combination of social-media file-size and resolution limits, my inability to articulate what it is that I have just done in words, a wish to post insanely large images and the general [yak-shaving](https://en.wiktionary.org/wiki/yak_shaving) of getting animations to work was probably the hardest part for me. No fun. Making things that are nice to look at, learning new stuff, and the general interaction and feedback kind makes it worth it though.
+But this is where I am now
 
 ::: {.callout-note appearance="minimal"}
 After a brief period of activity, where I have posted a lot of maps for a month, I now plan to return to my usual approach of mostly ignoring posting anything unless I really have to.
 :::
+
+Making things that are nice to look at, learning new stuff, and the general interaction and feedback kind makes it worth it though.
+
+
+TL;DR some people liked it and I learnt some stuff. Maybe that's enough.
