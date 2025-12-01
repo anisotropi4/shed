@@ -17,7 +17,7 @@ format:
     crossrefs-hover: false
 ---
 
-This is a retrospective of my 30 Day Map Challenge. In a reckless moment on the 1^st^ November 2025 I thought I would have a go a making a few maps and see how far I'd get to before stopiing. Some four-and-a-bit weeks later, this is what I got and the associated social-media [Fosstodon toots](https://fosstodon.org/deck/@wnd).
+This is a retrospective of my 30 Day Map Challenge. In a reckless moment on the 1^st^ November 2025 I thought I would have a go a making a few maps and see how far I'd get to before stopiing. Some four-and-a-bit weeks later, this is what I got and the associated social-media [Fosstodon](https://fosstodon.org/deck/@wnd) toots.
 
 ## [2025-11-01 "Points"](https://fosstodon.org/@wnd/115476758004810874) 
 
@@ -63,14 +63,13 @@ For the third #30MapsInAMonth are three theoretical European full-automated luxu
 #rail #network #HighSpeedRail #stations #30DayMapChallenge
 :::
 
-![](30-day/03/mook-01-30.png){width=45% fig-alt="A map of Europe showing a theoretical high-speed rail network based on population distribution. The high-speed lines are drawn in orange between population centres with colour and line width proportional to the number of people who would use that route based on aggregating WorldPop population data into a coarse set of h3 hexagons" .lightbox}
+![](30-day/03/mook-01-30.png){fig-align="center" width=90% fig-alt="A map of Europe showing a theoretical high-speed rail network based on population distribution. The high-speed lines are drawn in orange between population centres with colour and line width proportional to the number of people who would use that route based on aggregating WorldPop population data into a coarse set of h3 hexagons" .lightbox}
 
-![](30-day/03/mook-03-00-name.png){width=45% fig-alt="A map of Europe showing a theoretical high-speed rail network based on population distribution. The high-speed lines are drawn in orange between named population centres with colour and line width proportional to the number of people who would use that route based on aggregating WorldPop population data into a more detailed set of h3 hexagons" .lightbox}
+::: {layout-ncol=2}
+![](30-day/03/mook-03-00-name.png){width=50% fig-alt="A map of Europe showing a theoretical high-speed rail network based on population distribution. The high-speed lines are drawn in orange between named population centres with colour and line width proportional to the number of people who would use that route based on aggregating WorldPop population data into a more detailed set of h3 hexagons" .lightbox}
 
-![](30-day/03/mook-03-30-name.png){width=45% fig-alt="A map of Europe showing a theoretical high-speed rail network based on population distribution. The high-speed lines are drawn in orange between named population centres with colour and line width proportional to the number of people who would use that route based on aggregating WorldPop population data into a more detailed set of h3 hexagons rotated by 30°" .lightbox}
-
-
-
+![](30-day/03/mook-03-30-name.png){width=50% fig-alt="A map of Europe showing a theoretical high-speed rail network based on population distribution. The high-speed lines are drawn in orange between named population centres with colour and line width proportional to the number of people who would use that route based on aggregating WorldPop population data into a more detailed set of h3 hexagons rotated by 30°" .lightbox}
+:::
 
 ## [2025-11-04 "Data"](https://fosstodon.org/@wnd/115490489092372541) 
 
@@ -80,5 +79,5 @@ For the fourth #30MapsInAMonth is a map also based on population distribution an
 #rail #network #hinterland #stations #30DayMapChallenge
 :::
 
-![](30-day/04/sheffield-01.png){align=center width=80% fig-alt="A map showing the shortest walking routes from the 2021 census Output Area locations to the stations near Sheffield, with Sheffield in the centre as orange lines. The line width is proportional to the aggregated population and the routes are based on based on the OpenStreetMap path and road data." .lightbox}
+![](30-day/04/sheffield-01.png){fig-align=center width=80% fig-alt="A map showing the shortest walking routes from the 2021 census Output Area locations to the stations near Sheffield, with Sheffield in the centre as orange lines. The line width is proportional to the aggregated population and the routes are based on based on the OpenStreetMap path and road data." .lightbox}
 
