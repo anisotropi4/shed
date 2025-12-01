@@ -121,7 +121,9 @@ For the seventh #30MapsInAMonth are two maps showing the number of heavy railway
 :::
 
 ## Week 2
-![](30-day/08/){fig-align=center width=80% fig-alt="" .lightbox}
+
+### In Media Res
+
 
 ### [2025-11-08 "Urban"]()
 
@@ -180,6 +182,11 @@ For the seventh #30MapsInAMonth are two maps showing the number of heavy railway
 ![](30-day/14/){fig-align=center width=80% fig-alt="" .lightbox}
 
 ## Week 3
+
+### Zeno all the way down
+
+
+
 
 ### [2025-11-15 "Fire"]()
 
