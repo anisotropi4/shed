@@ -40,7 +40,7 @@ For the second #30MapsInAMonth here is a map showing the heavy-rail network trac
 #rail #network #stations #30DayMapChallenge #EveryoneHomeSafeEveryDay
 :::
 
-![](30-day/02/south-yorkshire-fens-01.png){height=20cm fig-align="center" fig-alt="A map showing the heavy rail network model as orange lines with stations as layers orange hexagons. The map centred on the East Coast Main Line between South Yorkshire and the Fens" .lightbox}
+![](30-day/02/south-yorkshire-fens-01.png){width=50% fig-align="center" fig-alt="A map showing the heavy rail network model as orange lines with stations as layers orange hexagons. The map centred on the East Coast Main Line between South Yorkshire and the Fens" .lightbox}
 
 ### 2025-11-02 Outro to the Intro
 
@@ -130,7 +130,7 @@ Although there is a similar population count within both areas there would appea
 
 ### In Media Res
 
-
+After a week, it felt that revisiting maps and visualisations from over the last few years, this would be straightforward. Pride cometh before a fall.
 
 ### [2025-11-08 "Urban"](https://fosstodon.org/@wnd/115514196876492437)
 
@@ -238,13 +238,15 @@ The second set shows #OpenData from @nationalgriduk@bird.makeup and Scottish and
 #electricity #transmission #generation #Ireland #GreatBritain #30dayMapChallenge
 :::
 
-![](30-day/15/){fig-align=center width=80% fig-alt="A map showing the high-voltage electricity grid for the islands of Northern Europe and transmission tower locations. The blue diamonds show tower locations, the coloured lines either overhead lines if on a tower, or cables if not. The line colour from green to yellow indicates increasing transmission voltage." .lightbox}
+::: {layout-ncol=2}
+![](30-day/15/spark-osm-01.png){fig-align=center fig-alt="A map showing the high-voltage electricity grid for the islands of Northern Europe and transmission tower locations. The blue diamonds show tower locations, the coloured lines either overhead lines if on a tower, or cables if not. The line colour from green to yellow indicates increasing transmission voltage." .lightbox}
 
-![](30-day/15/){fig-align=center width=80% fig-alt="A map showing the high-voltage electricity grid for the islands of Northern Europe with transmission tower and wind-turbine locations. The blue diamonds show tower locations, the grey square wind-turbines, the coloured lines either overhead lines if on a tower, or cables if not. The line colour from green to yellow indicates increasing transmission voltage." .lightbox}
+![](30-day/15/spark-osm-02.png){fig-align=center fig-alt="A map showing the high-voltage electricity grid for the islands of Northern Europe with transmission tower and wind-turbine locations. The blue diamonds show tower locations, the grey square wind-turbines, the coloured lines either overhead lines if on a tower, or cables if not. The line colour from green to yellow indicates increasing transmission voltage." .lightbox}
 
-![](30-day/15/){fig-align=center width=80% fig-alt="A map showing National Grid power lines in orange, cables in dark green and towers as blue diamonds." .lightbox}
+![](30-day/15/spark-core-01.png){fig-align=center fig-alt="A map showing National Grid power lines in orange, cables in dark green and towers as blue diamonds." .lightbox}
 
-![](30-day/15/){fig-align=center width=80% fig-alt="A map showing National Grid and Scottish & Southern Electricity Networks power lines in orange, cables in dark green and towers as blue diamonds." .lightbox}
+![](30-day/15/spark-core-02.png){fig-align=center fig-alt="A map showing National Grid and Scottish & Southern Electricity Networks power lines in orange, cables in dark green and towers as blue diamonds." .lightbox}
+:::
 
 ::: {.callout-note appearance="minimal"}
 The gap in the central belt of Scotland is because I could not find the equivalent data from the operator SP Energy Networks. If this is available, I would be happy to update the map.
@@ -261,10 +263,11 @@ The second shows routes based on data from the UK #Census2021
 #Rail #Passenger #PublicTransport #GreatBritain #OpenData #30dayMapChallenge
 :::
 
-![](30-day/16/){fig-align=center width=80% fig-alt="A map showing the walking routes from the 1km² WorldPop 2025 population locations to heavy rail stations in Britain as orange lines with width scaled to the aggregated number of people on that route" .lightbox}
+::: {layout-ncol=2}
+![](30-day/16/worldpop-hinterland-01.png){fig-align=center width=80% fig-alt="A map showing the walking routes from the 1km^2^ WorldPop 2025 population locations to heavy rail stations in Britain as orange lines with width scaled to the aggregated number of people on that route" .lightbox}
 
-![](30-day/16/){fig-align=center width=80% fig-alt="A map showing the walking routes from the 2021 census population Output Area/Data Zone locations to heavy rail stations in Britain as orange lines with width scaled to the aggregated number of people on that route
-The Census data is from Office of National Statistics and Library of Scotland" .lightbox}
+![](30-day/16/hinterland-oa-01.png){fig-align=center width=80% fig-alt="A map showing the walking routes from the 2021 census population Output Area/Data Zone locations to heavy rail stations in Britain as orange lines with width scaled to the aggregated number of people on that route. The Census data is from Office of National Statistics and Library of Scotland" .lightbox}
+:::
 
 ### [2025-11-17 "A new tool"](https://fosstodon.org/@wnd/115563977981626783)
 
@@ -276,20 +279,28 @@ As before, this uses tagged @openstreetmap@en.osm.town  railway data, but this u
 #Rail #Electrification #PublicTransport #Vega-lite #GreatBritain #OpenData #30dayMapChallenge
 :::
 
-![](30-day/17/){fig-align=center width=80% fig-alt="A map of the Islands of Northern Europe at a medium level of simplification showing heavy rail electrification. No electrification is in black, Overhead Contact Line (OCL) in red, other forms of electrification in green and dual electrification in orange." .lightbox}
+::: {layout-ncol=2}
+![](30-day/17/vega-lite-015.png){fig-align=center width=80% fig-alt="A map of the Islands of Northern Europe at a medium level of simplification showing heavy rail electrification. No electrification is in black, Overhead Contact Line (OCL) in red, other forms of electrification in green and dual electrification in orange." .lightbox}
 
-![](30-day/17/){fig-align=center width=80% fig-alt="A map of the Islands of Northern Europe at a high level of simplification showing heavy rail electrification. No electrification is in black, Overhead Contact Line (OCL) in red, other forms of electrification in green and dual electrification in orange." .lightbox}
+![](30-day/17/vega-lite-010.png){fig-align=center width=80% fig-alt="A map of the Islands of Northern Europe at a high level of simplification showing heavy rail electrification. No electrification is in black, Overhead Contact Line (OCL) in red, other forms of electrification in green and dual electrification in orange." .lightbox}
 
-![](30-day/17/){fig-align=center width=80% fig-alt="A map of the Islands of Northern Europe at a lower level of simplification showing heavy rail electrification. No electrification is in black, Overhead Contact Line (OCL) in red, other forms of electrification in green and dual electrification in orange." .lightbox}
+![](30-day/17/vega-lite-020.png){fig-align=center width=80% fig-alt="A map of the Islands of Northern Europe at a lower level of simplification showing heavy rail electrification. No electrification is in black, Overhead Contact Line (OCL) in red, other forms of electrification in green and dual electrification in orange." .lightbox}
 
-![](30-day/17/){fig-align=center width=80% fig-alt="A map of the Islands of Northern Europe with a limited level of simplification showing heavy rail electrification. No electrification is in black, Overhead Contact Line (OCL) in red, other forms of electrification in green and dual electrification in orange." .lightbox}
+![](30-day/17/vega-lite-060.png){fig-align=center width=80% fig-alt="A map of the Islands of Northern Europe with a limited level of simplification showing heavy rail electrification. No electrification is in black, Overhead Contact Line (OCL) in red, other forms of electrification in green and dual electrification in orange." .lightbox}
+:::
 
 ::: {.callout-note appearance="minimal"}
 These maps then available online here
-[Medium simplification](https://anisotropi4.github.io/fizzy-knitting/vega-lite-025.html){fig-alt="A map of the Islands of Northern Europe at a medium level of simplification showing heavy rail electrification. No electrification is in black, Overhead Contact Line (OCL) in red, other forms of electrification in green and dual electrification in orange."
-[High simplification](https://anisotropi4.github.io/fizzy-knitting/vega-lite-020.html){fig-align=center width=80% fig-alt=""}
-[Lower simplification](https://anisotropi4.github.io/fizzy-knitting/vega-lite-030.html){fig-align=center width=80% fig-alt=""}
-[Limited simplification](https://anisotropi4.github.io/fizzy-knitting/vega-lite-060.html){fig-align=center width=80% fig-alt=""}
+
+::: {layout-ncol=2}
+[Medium simplification](https://anisotropi4.github.io/fizzy-knitting/vega-lite-025.html)
+
+[High simplification](https://anisotropi4.github.io/fizzy-knitting/vega-lite-020.html)
+
+[Lower simplification](https://anisotropi4.github.io/fizzy-knitting/vega-lite-030.html)
+
+[Limited simplification](https://anisotropi4.github.io/fizzy-knitting/vega-lite-060.html)
+:::
 
 With more time, it should be possible to make them zoomable and interactive.
 :::
@@ -304,13 +315,15 @@ This was inspired by my daughter's final year degree project and, although rare,
 #Space #Modelling #Chaos #python #30dayMapChallenge
 :::
 
+::: {layout-ncol=2}
 ![](30-day/18/){fig-align=center width=80% fig-alt="An animated simulation of a theoretical solar system with two planets showing the trajectory of the two planets as red and green arcs and the central mass as a blue cross. In this video the chaotic movement of the two planets causing the two planets to collide." .lightbox}
 
-![](30-day/18/){fig-align=center width=80% fig-alt="An animated simulation of a theoretical solar system with two planets showing the trajectory of the two planets as red and green arcs and the central mass as a blue cross. In this video the chaotic movement of the two planets causes the green body to collide with the central star." .lightbox}
+![](30-day/18/v-crash.gif){fig-align=center width=80% fig-alt="An animated simulation of a theoretical solar system with two planets showing the trajectory of the two planets as red and green arcs and the central mass as a blue cross. In this video the chaotic movement of the two planets causes the green body to collide with the central star." .lightbox}
 
 ![](30-day/18/){fig-align=center width=80% fig-alt="An animated simulation of a theoretical solar system with two planets showing the trajectory of the two planets as red and green arcs and the central mass as a blue cross. In this video the chaotic movement of the system causing the green planets to escape the solar system.." .lightbox}
 
-![](30-day/18/){fig-align=center width=80% fig-alt="An animated simulation of a theoretical solar system with two planets showing the trajectory of the two planets as red and green arcs and the central mass as a blue cross. In this video the chaotic movement of the system is not sufficiently large to cause anything other than a perturbation of the green planet." .lightbox}
+![](30-day/18/normal.gif){fig-align=center width=80% fig-alt="An animated simulation of a theoretical solar system with two planets showing the trajectory of the two planets as red and green arcs and the central mass as a blue cross. In this video the chaotic movement of the system is not sufficiently large to cause anything other than a perturbation of the green planet." .lightbox}
+:::
 
 ### [2025-11-19 "Projections"](https://fosstodon.org/@wnd/115575468569587952)
 
@@ -322,13 +335,15 @@ The four maps represent points on the oblate-spheroid that is the Earth on a sur
 #rail #WorldMap #NaturalEarth #Coordinates #30dayMapChallenge
 :::
 
-![](30-day/19/){fig-align=center width=80% fig-alt="A projection showing heavy rail lines as orange lines on a world map using base latitude and longitude coordinates projection EPSG3857 in °" .lightbox}
+::: {layout-ncol=2}
+![](30-day/19/ne-rail-4326.png){fig-align=center width=80% fig-alt="A projection showing heavy rail lines as orange lines on a world map using base latitude and longitude coordinates projection EPSG3857 in °" .lightbox}
 
-![](30-day/19/){fig-align=center width=80% fig-alt="A projection showing heavy rail lines as orange lines on a world map using a Pseudo-Mercator projection EPSG3857 in m" .lightbox}
+![](30-day/19/ne-rail-3857.png){fig-align=center width=80% fig-alt="A projection showing heavy rail lines as orange lines on a world map using a Pseudo-Mercator projection EPSG3857 in m" .lightbox}
 
-![](30-day/19/){fig-align=center width=80% fig-alt="A projection showing heavy rail lines as orange lines on a world map using a Europ-centric projection EPSG3034 in m" .lightbox}
+![](30-day/19/ne-rail-3034.png){fig-align=center width=80% fig-alt="A projection showing heavy rail lines as orange lines on a world map using a Europ-centric projection EPSG3034 in m" .lightbox}
 
-![](30-day/19/){fig-align=center width=80% fig-alt="A projection showing heavy rail lines as orange lines on a world map using the Ordnance Survey UK-centric projection EPSG27700 in m" .lightbox}
+![](30-day/19/ne-rail-27700.png){fig-align=center width=80% fig-alt="A projection showing heavy rail lines as orange lines on a world map using the Ordnance Survey UK-centric projection EPSG27700 in m" .lightbox}
+:::
 
 ### [2025-11-20 "Water"](https://fosstodon.org/@wnd/115581151327659164)
 
@@ -340,20 +355,25 @@ These three maps show difference scales and how different tags affect the maps.
 #water #rivers #WorldMap #OpenData #30dayMapChallenge
 :::
 
-![](30-day/20/){fig-align=center width=80% fig-alt="A map of OpenStreetMap data for Great Britain and Ireland showing rivers as blue lines" .lightbox}
+::: {layout-ncol=2}
+![](30-day/20/flux-01.png){fig-align=center fig-alt="A map of OpenStreetMap data for Great Britain and Ireland showing rivers as blue lines" .lightbox}
 
-![](30-day/20/){fig-align=center width=80% fig-alt="A map of OpenStreetMap data for Great Britain and Ireland showing rivers, streams and canals as blue lines" .lightbox}
+![](30-day/20/flux-01A.png){fig-align=center fig-alt="A map of OpenStreetMap data for Great Britain and Ireland showing rivers, streams and canals as blue lines" .lightbox}
+:::
 
-![](30-day/20/){fig-align=center width=80% fig-alt="A map of OpenStreetMap data for Wales showing rivers, streams and canals as blue lines" .lightbox}
+
+![](30-day/20/flux-02){fig-align=center width=35% fig-alt="A map of OpenStreetMap data for Wales showing rivers, streams and canals as blue lines" .lightbox}
+
 
 ::: {.callout-note appearance="minimal"}
 The final two maps then overlay the OSM and OS data to see how they compare.
 :::
 
-![](30-day/20/){fig-align=center width=80% fig-alt="A map of OpenStreetMap data for Great Britain showing rivers, streams and canals as blue lines and Ordnance Survey Open River data as golden lines" .lightbox}
+::: {layout-ncol=2}
+![](30-day/20/flux-02A.png){fig-align=center width=80% fig-alt="A map of OpenStreetMap data for Great Britain showing rivers, streams and canals as blue lines and Ordnance Survey Open River data as golden lines" .lightbox}
 
-![](30-day/20/){fig-align=center width=80% fig-alt="A map of OpenStreetMap data for Wales showing rivers, streams and canals as blue lines and Ordnance Survey Open River data as golden lines" .lightbox}
-
+![](30-day/20/flux-04.png){fig-align=center width=80% fig-alt="A map of OpenStreetMap data for Wales showing rivers, streams and canals as blue lines and Ordnance Survey Open River data as golden lines" .lightbox}
+:::
 
 ### [2025-11-21 "Icons"](https://fosstodon.org/@wnd/115586784688790212)
 
@@ -369,9 +389,11 @@ The two maps show all concerts in European and the world and is based on geoloca
 #EinstürzendeNeubauten #TheGarden #Europe #WorldMap #OpenData #30dayMapChallenge
 :::
 
-![](30-day/21/){fig-align=center width=80% fig-alt="A world map with land in bronze and sea in white showing locations of Einstürnzende Neubaten concerts using the Einstürnzende Neubaten petroglyph" .lightbox}
+::: {layout-ncol=2}
+![](30-day/21/konzert-03.png){fig-align=center width=80% fig-alt="A world map with land in bronze and sea in white showing locations of Einstürnzende Neubaten concerts using the Einstürnzende Neubaten petroglyph" .lightbox}
 
-![](30-day/21/){fig-align=center width=80% fig-alt="A map of Europe with land in bronze showing locations of Einstürnzende Neubaten concerts using the Einstürnzende Neubaten petroglyph" .lightbox}
+![](30-day/21/konzert-04.png){fig-align=center width=80% fig-alt="A map of Europe with land in bronze showing locations of Einstürnzende Neubaten concerts using the Einstürnzende Neubaten petroglyph" .lightbox}
+:::
 
 ## Week 4
 
@@ -493,7 +515,7 @@ For the twenty seventh #30MapsInAMonth is an animation showing the organisationa
 \* if truth be told, I don't know what a TME is...
 :::
 
-![](30-day/27/network-rail-boundaries.gif){fig-align=center width=80% fig-alt="An animated hierarchical map of the organisational operational boundaries of Network Rail as black lines and shading from route, region, maintenance delivery units and beyond." .lightbox}
+![](30-day/27/network-rail-boundaries.gif){fig-align=center width=50% fig-alt="An animated hierarchical map of the organisational operational boundaries of Network Rail as black lines and shading from route, region, maintenance delivery units and beyond." .lightbox}
 
 ### [2025-11-28 "Black"](https://fosstodon.org/@wnd/115626958574995259)
 
