@@ -23,7 +23,7 @@ website:
       - href: script.qmd
         text: "python script"
       - href: 30daymapchallenge.qmd
-        text: "30 day maps"        
+        text: "30 day map challenge"        
   site-url: "https://anisotropi4@anisotropi4.github.io/shed/" # makes site links work on your remote site
 
 execute:
