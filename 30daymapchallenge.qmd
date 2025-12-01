@@ -48,7 +48,6 @@ As I then said [at the time:](https://fosstodon.org/@wnd/115481179128707599)
 
 ::: {.callout-note appearance="minimal"}
 I'm never sure about this, but this year I decided to prepare for the #30DayMapChallenge by looking at things I have mapped over the years. My conclusion is I suffer from a rather myopic approach to the topic I visualise... #rail #Infrastructure #population #Europe
-
 :::
 
 Followed by the revelation that there was [a bit more to this than I had thought:](https://fosstodon.org/@wnd/115481320820744649)
@@ -83,26 +82,42 @@ For the fourth #30MapsInAMonth is a map also based on population distribution an
 
 ![](30-day/04/sheffield-01.png){fig-align=center width=80% fig-alt="A map showing the shortest walking routes from the 2021 census Output Area locations to the stations near Sheffield, with Sheffield in the centre as orange lines. The line width is proportional to the aggregated population and the routes are based on based on the OpenStreetMap path and road data." .lightbox}
 
-### [2025-11-05 "Earth"]()
+### [2025-11-05 "Earth"](https://fosstodon.org/@wnd/115496271880281546)
 
 ::: {.callout-note appearance="minimal"}
+For the fifth #30MapsInAMonth is a map global map of places called "Wayne" based on #OpenStreetMap. It is arguably both "Waynes World" and my most "excellent" map.
 
+#PlaceNames #world #map #30DayMapChallenge
 :::
 
-![](30-day/06/){fig-align=center width=80% fig-alt="" .lightbox}
+![](30-day/05/Wayne-04.png){fig-align=center fig-alt="A global map of the world showing places called \"Wayne\" as points. Blue points correspond to streets, purple points correspond to political boundaries and red points correspond to geographical features" .lightbox}
 
-### [2025-11-06 "Dimensions"]()
+### [2025-11-06 "Dimensions"](https://fosstodon.org/@wnd/115501537961199585)
 
 ::: {.callout-note appearance="minimal"}
+For the six #30MapsInAMonth are two maps the one-dimensional population distribution of Austria. Aggregating @WorldPopProject@mapstodon.space population and country boundary data, based in 100m slices, this shows the relative population distribution in the horizontal and vertical points on the compass.
 
+#population #Austria #30DayMapChallenge #OpenData
 :::
 
-![](30-day/07/){fig-align=center width=80% fig-alt="" .lightbox}
+::: {layout-ncol=2}
+![](30-day/06/AUT-yband-01.png){fig-align=center fig-alt="A map of Austria showing the political boundary in black with population orange colour density proportional to the fraction of total population in 100m East-to-West bands" .lightbox}
+
+![](30-day/06/AUT-xband-01.png){fig-align=center fig-alt="A map of Austria showing the political boundary in black with population orange colour density proportional to the fraction of total population in 100m North-to-South bands" .lightbox}
+:::
 
 ### [2025-11-07 "Accessibility"]()
 
 ::: {.callout-note appearance="minimal"}
+For the seventh #30MapsInAMonth are two maps showing the number of heavy railway services on week of 18 August 2025 for all stations within a 80km radius of the 20M Northern population centred around Leek in Staffordshire and the 22M South Eastern population centred on London.
 
+#rail #PublicTransport #train #services #OpenData
+:::
+
+::: {layout-ncol=2}
+![](30-day/07/south-services-80.png){fig-align=center width=80% fig-alt="A map showing heavy railway services as orange lines with the width proportional to the number of services that operated on week of 18 August 2025 for all stations within a 80km radius of the 22M South Eastern population centred around London. The line width is proportional to the number of services that operated." .lightbox}
+
+![](30-day/07/north-services-80.png){fig-align=center width=80% fig-alt="A map showing heavy railway services as orange lines with the width proportional to the number of services that operated on week 18 August 2025 for all stations within a 80km radius of the 20M North and Midlands population centred around Leek in Staffordshire. The line width is proportional to the number of services that operated." .lightbox}
 :::
 
 ## Week 2
