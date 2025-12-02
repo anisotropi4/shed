@@ -19,13 +19,13 @@ format:
 
 ## It Starts
 
-This a summary of my 30 Day Map Challenge 2025. In a reckless moment on the 1^st^ November 2025 I thought I would have a go a making a few maps and see how far I'd get to before stopiing. Some four-and-a-bit weeks later, this is what I got and the associated social-media [Fosstodon](https://fosstodon.org/deck/@wnd) toots.
+This a summary of my 30 Day Map Challenge 2025. In a reckless moment on the 1^st^ November 2025 I thought I would have a go a making a few maps and see how far I'd get to before stoping. Some four-and-a-bit weeks later, this is what I got and the associated social-media [Fosstodon](https://fosstodon.org/deck/@wnd) toots.
 
 ## Week 1
 
 ### 2025-11-01 Intro to the Intro
 
-I can't remember what motivated to do this. Or even what started this, other than I must have seem someone toot or post about the #30DayMapChallenge2025 and thoughts I could start and then give up when I felt like it.
+I can't remember what motivated to do this. Or even what started this, other than I must have seem someone toot or post about the #30DayMapChallenge2025, and thoughts I could start and then give up when I felt like it.
 
 ### [2025-11-01 "Points"](https://fosstodon.org/@wnd/115476758004810874)
 
@@ -48,9 +48,9 @@ For the second #30MapsInAMonth here is a map showing the heavy-rail network trac
 
 ![](30-day/02/south-yorkshire-fens-01.png){width=50% fig-align="center" fig-alt="A map showing the heavy rail network model as orange lines with stations as layers orange hexagons. The map centred on the East Coast Main Line between South Yorkshire and the Fens" .lightbox}
 
-### 2025-11-02 Outro to the Intro
+### [2025-11-02 Outro to the Intro](https://fosstodon.org/@wnd/115481179128707599)
 
-As I then said [at the time:](https://fosstodon.org/@wnd/115481179128707599)
+As I then said at the time:
 
 ::: {.callout-note appearance="minimal"}
 I'm never sure about this, but this year I decided to prepare for the #30DayMapChallenge by looking at things I have mapped over the years. My conclusion is I suffer from a rather myopic approach to the topic I visualise... #rail #Infrastructure #population #Europe
@@ -228,7 +228,7 @@ For the fourteenth #30MapsInAMonth is a map showing high-speed rail, or not, for
 
 ### Zeno all the way down
 
-This is half-way point, the point where easy visualisations were done, 15-days left and eight* where I had no clear idea. Leaving just me and the turtles...
+This is half-way point, the point where easy visualisations were done, 15-days left and eight* where I had no idea. Not a clue. Leaving just me and the turtles...
 
 \* "Black", "Makeover", "Water", "Icons", "Out of this World", "A new tool", "Cell" and "Fire" were very much WTAF
 
@@ -405,9 +405,7 @@ The two maps show all concerts in European and the world and is based on geoloca
 
 ### Intro to the Outro
 
-It was at this point that I could then see the end and had something prepared for everything outwith "Black" and "Makeover".
-
-I had a steer on "Black" based on air-pollution data from the [UK National Atmospheric Emissions Inventory](https://naei.energysecurity.gov.uk/).
+It was at this point that I could then see the end and had something prepared for everything outwith "Black" and "Makeover". Which was a relief, especially when I got a steer on "Black" based on air-pollution data from the [UK National Atmospheric Emissions Inventory](https://naei.energysecurity.gov.uk/).
 
 My thought for the "Makeover" was to then redo the [Fully Automated Luxury European High-Speed Railway from 2025-11-03](https://fosstodon.org/@wnd/115484726949074623) but went with a recut with a global electrification map, of the . Which was more popular then the theoretical high-speed rail map, and vox populari vox dei and all that.
 
@@ -592,9 +590,11 @@ Outwith the ORR ODM data map and they will get updated once next FY year's data 
 
 ## [How It Ends](https://fosstodon.org/@wnd/115638242713133373)
 
-This has been hard work and probably took up more time than it should have. I have done bigger things than I had thought I could. Then again, quite a lot of what I first thought I would post I haven't. Often because it didn't fit the theme.
+This has been hard work and probably took up more time than it should have. Equall I did bigger things than I had thought I could. But quite a lot of what I first thought I would post I haven't. Often because it didn't fit the theme.
 
-I also found myself at a point about a half-way-through where I decided to get stuff made ahead of time. Which was good as it meant I finished the whole piece and had things to say each day that vaguely fitted the theme. However, this didn't help with the actual daily posting itself. Where a combination of social-media file-size and resolution limits, my inability to articulate what it is that I have just done in words, a wish to post insanely large images and the general [yak-shaving](https://en.wiktionary.org/wiki/yak_shaving) of getting animations to work was probably the hardest part for me. No fun. 
+I also found myself at a point about a half-way-through where I decided to get stuff made ahead of time. Which was good as it meant I finished the whole piece and had things to say each day that vaguely fitted the theme. However, this didn't help with the actual daily posting itself.
+
+This is hard, as a combination of social-media file-size and resolution limits, my inability to articulate what it is that I have just done in words, a wish to post insanely large images and the general [yak-shaving](https://en.wiktionary.org/wiki/yak_shaving) of getting animations to work was probably trickiest bit for me. No fun. 
 
 But this is where I am now
 
