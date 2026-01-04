@@ -71,9 +71,15 @@ Resources and reference material used for talks and visualisations
 
 ::: {}
 1. The base map of mainland Britain and other European countries are derived from the [WorldPop](https://hub.worldpop.org) base maps under [CC 4.0 by deed](https://creativecommons.org/licenses/by/4.0/) retrieved 2023-09-07.
-2. EU [Global Human Settlement layer](https://human-settlement.emergency.copernicus.eu/), data licensed under [creative commons 4.0](https://creativecommons.org/licenses/by/4.0/)
-3. [OpenStreetMap](https://openstreetmap.org), data licensed under [Open Database License (ODbL) v1.0](https://opendatacommons.org/licenses/odbl/1-0/)
+2. EU [Global Human Settlement layer](https://human-settlement.emergency.copernicus.eu/ghs_stat_ucdb2015mt_r2019a.php) data licensed under [creative commons 4.0](https://creativecommons.org/licenses/by/4.0/).
+3. [OpenStreetMap](https://openstreetmap.org), data licensed under [Open Database License (ODbL) v1.0](https://opendatacommons.org/licenses/odbl/1-0/).
 4. Access to [OpenStreetMap](https://openstreetmap.org) through the [OverPassAPI Turbo](https://overpass-turbo.eu/) service.
+5. European and Global WorldPop 1km² data [Population Counts](https://hub.worldpop.org/project/categories?id=3) under [CC 4.0 by deed](https://creativecommons.org/licenses/by/4.0/).
+6. Base global [WorldPop country boundary](https://hub.worldpop.org/geodata/listing?id=62) data under [CC 4.0 by deed](https://creativecommons.org/licenses/by/4.0/) retrieved 2025-11-01.
+7. Tom Forth's [population around a point](https://www.tomforth.co.uk/circlepopulations/) tool that shows the population within a circle of a given radius under [CC 4.0 by deed](https://creativecommons.org/licenses/by/4.0/).
+
+## Archive Base Geography and Population Data
+1. EU [Global Human Settlement layer](https://human-settlement.emergency.copernicus.eu/), data licensed under [creative commons 4.0](https://creativecommons.org/licenses/by/4.0/).
 :::
 
 ## Other Resources
