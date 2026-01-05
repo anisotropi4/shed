@@ -21,6 +21,10 @@ format:
 
 This a summary of my 30 Day Map Challenge 2025. In a reckless moment on the 1^st^ November 2025 I thought I would have a go a making a few maps and see how far I'd get to before stoping. Some four-and-a-bit weeks later, this is what I got and the associated social-media [Fosstodon](https://fosstodon.org/deck/@wnd) toots.
 
+### Reference and License
+
+This is published under [CC BY 4.0 Attribution](https://creativecommons.org/licenses/by/4.0/deed.en) and details about the [licenses and open data used](https://anisotropi4.github.io/shed/opendata.html). 
+
 ## Week 1
 
 ### 2025-11-01 Intro to the Intro
@@ -81,7 +85,7 @@ For the third #30MapsInAMonth are three theoretical European full-automated luxu
 ### [2025-11-04 "Data"](https://fosstodon.org/@wnd/115490489092372541)
 
 ::: {.callout-note appearance="minimal"}
-For the fourth #30MapsInAMonth is a map also based on population distribution and the shortest walking route to routes from the 2021 Office for National Statistics census Output Area locations to the stations centred on Sheffield. The line width is proportional to the aggregated population and the routes are based on based on @openstreetmap path data, and the station locations on Office of Rail and Road (ORR) active station list
+For the fourth #30MapsInAMonth is a map also based on population distribution and the shortest walking route to routes from the 2021 Office for National Statistics census Output Area locations to the stations centred on Sheffield. The line width is proportional to the aggregated population and the routes are based on based on [OpenStreetMap](https://openstreetmap.org) path data, and the station locations on Office of Rail and Road (ORR) active station list
 
 #rail #network #hinterland #stations #30DayMapChallenge
 :::
@@ -176,7 +180,7 @@ Unlike things to try in life, I think you should #ElectrifyAllThings but only on
 * also known as 10" .lightbox}
 
 ::: {.callout-note appearance="minimal"}
-\* thanks to Garry Keenor (@25kV@mas.to) for coordinating work to clean up the electrification tags on @openstreetmap@en.osm.town and agreeing the colour scheme used here.
+\* thanks to Garry Keenor (@25kV@mas.to) for coordinating work to clean up the electrification tags on [OpenStreetMap](https://openstreetmap.org) and agreeing the colour scheme used here.
 :::
 
 
@@ -185,7 +189,7 @@ Unlike things to try in life, I think you should #ElectrifyAllThings but only on
 ::: {.callout-note appearance="minimal"}
 For the eleventh #30MapsInAMonth is an animated map of the British rail network showing track occupancy count for passenger train services in hour slices for the week of 18 August 2025.
 
-This is based on the Network Rail centre-line track- or network-model and Common Interface File (CIF) format timetable file published on the Rail Data Marketplace combined with ORR and @openstreetmap@en.osm.town  location data for timetable points.
+This is based on the Network Rail centre-line track- or network-model and Common Interface File (CIF) format timetable file published on the Rail Data Marketplace combined with ORR and [OpenStreetMap](https://openstreetmap.org)  location data for timetable points.
 
 #OpenData #30dayMapChallenge #timetable #rail #passenger
 :::
@@ -205,7 +209,7 @@ For the twelfth #30MapsInAMonth is a theoretical future public transport network
 ### [2025-11-13 "10 minute map"](https://fosstodon.org/@wnd/115541241654595290)
 
 ::: {.callout-note appearance="minimal"}
-For the thirteenth #30MapsInAMonth are two short form maps based on [Tom Forth's tool](https://www.tomforth.co.uk/circlepopulations/) that shows the population within a 100km radius circle of two points in the UK: a point in the North is 20 141 911 and West London is 22 625 112. This is based on @opendatabund@social.bund.de  Street Map data and [Global Human Settlement (GHS)](https://human-settlement.emergency.copernicus.eu/ghs_stat_ucdb2015mt_r2019a.php)  EU Global Human Settlement (GHS) layer centre data.
+For the thirteenth #30MapsInAMonth are two short form maps based on [Tom Forth's tool](https://www.tomforth.co.uk/circlepopulations/) that shows the population within a 100km radius circle of two points in the UK: a point in the North is 20 141 911 and West London is 22 625 112. This is based on [OpenStreetMap](https://openstreetmap.org)  Street Map data and [Global Human Settlement (GHS)](https://human-settlement.emergency.copernicus.eu/ghs_stat_ucdb2015mt_r2019a.php)  EU Global Human Settlement (GHS) layer centre data.
 
 #Population #UK #OpenData  #30dayMapChallenge #NorthSouth
 :::
@@ -219,7 +223,7 @@ For the thirteenth #30MapsInAMonth are two short form maps based on [Tom Forth's
 ### [2025-11-14 "OpenStreetMap"](https://fosstodon.org/@wnd/115547181407411754)
 
 ::: {.callout-note appearance="minimal"}
-For the fourteenth #30MapsInAMonth is a map showing high-speed rail, or not, for a given value of "Europe". This is based on  line-speed from [OpenStreetMap](@openstreetmap@en.osm.town) tagged data. The geography is from the [WorldPop](https://hub.worldpop.org/project/categories?id=3) 1km^2^ dataset.
+For the fourteenth #30MapsInAMonth is a map showing high-speed rail, or not, for a given value of "Europe". This is based on  line-speed from [OpenStreetMap](https://openstreetmap.org) tagged data. The geography is from the [WorldPop](https://hub.worldpop.org/project/categories?id=3) 1km^2^ dataset.
 :::
 
 ![](30-day/14/rail-hs-04.png){fig-align=center fig-alt="A map of Europe showing high-speed rail with land in white, sea in light blue. High-speed tail lines are orange or otherwise in black." .lightbox}
@@ -239,7 +243,7 @@ For the fifteenth #30MapsInAMonth are two sets of map for electrical power trans
 
 Based on OpenStreetMap, the first set show the high-voltage transmission cables and lines, and then second of these with wind-turbines.
 
-The second set shows #OpenData from @nationalgriduk@bird.makeup and Scottish and Southern Electricity Networks (SSEN) data. 1/n
+The second set shows #OpenData from [NationalGrid](https://connecteddata.nationalgrid.co.uk/) and Scottish and Southern Electricity Networks (SSEN) data. 1/n
 
 #electricity #transmission #generation #Ireland #GreatBritain #30dayMapChallenge
 :::
@@ -261,7 +265,7 @@ The gap in the central belt of Scotland is because I could not find the equivale
 ### [2025-11-16 "Cell"](https://fosstodon.org/@wnd/115558909793335614)
 
 ::: {.callout-note appearance="minimal"}
-For the sixteeth #30MapsInAMonth are two map showing the watershed shortest walking route to the heavy rail stations in Britian. This uses @openstreetmap@en.osm.town  highway, road and path data for routing, scaled to show the number people who might take that path.
+For the sixteeth #30MapsInAMonth are two map showing the watershed shortest walking route to the heavy rail stations in Britian. This uses [OpenStreetMap](https://openstreetmap.org) highway, road and path data for routing, scaled to show the number people who might take that path.
 
 The first shows routes based on [WorldPop](https://hub.worldpop.org/project/categories?id=3) 1km^2^ data
 The second shows routes based on data from the UK #Census2021
@@ -280,7 +284,7 @@ The second shows routes based on data from the UK #Census2021
 ::: {.callout-note appearance="minimal"}
 For the seventeenth #30MapsInAMonth are four maps revising rail electrification using Vega-lite https://vega.github.io/vega-lite/, a tool I had never used before the weekend.
 
-As before, this uses tagged @openstreetmap@en.osm.town  railway data, but this uses a topological (TopoJSON) version, which can then be quantised to give different levels of granularity.
+As before, this uses tagged [OpenStreetMap](https://openstreetmap.org) railway data, but this uses a topological (TopoJSON) version, which can then be quantised to give different levels of granularity.
 
 #Rail #Electrification #PublicTransport #Vega-lite #GreatBritain #OpenData #30dayMapChallenge
 :::
@@ -354,7 +358,7 @@ The four maps represent points on the oblate-spheroid that is the Earth on a sur
 ### [2025-11-20 "Water"](https://fosstodon.org/@wnd/115581151327659164)
 
 ::: {.callout-note appearance="minimal"}
-For the twentieth #30MapsInAMonth are a set of map using @openstreetmap@en.osm.town  and @ordnancesurvey@bird.makeup  Survey to look at rivers and streams in the Islands of Northern Europe.
+For the twentieth #30MapsInAMonth are a set of map using [OpenStreetMap](https://openstreetmap.org) and [Ordnance Survey](https://www.ordnancesurvey.co.uk/products/os-open-rivers) to look at rivers and streams in the Islands of Northern Europe.
 
 These three maps show difference scales and how different tags affect the maps.
 
@@ -557,7 +561,7 @@ To provide a European perspective, if you would like a nine minute video of all 
 ### [2025-11-30 "Makeover"](https://fosstodon.org/@wnd/115638218182948704)
 
 ::: {.callout-note appearance="minimal"}
-For the thirtieth* #30MapsInAMonth are maps showing the electrification of the global heavy-rail network based on the track-model and electrification and electrification tags from @openstreetmap
+For the thirtieth* #30MapsInAMonth are maps showing the electrification of the global heavy-rail network based on the track-model and electrification and electrification tags from [OpenStreetMap](https://openstreetmap.org)
 
 An electric railway is the least carbon-intensive way of moving freight and passengers over long distances**. More so where the electricity generation is from renewable sources.
 
