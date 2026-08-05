@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.340">
+<meta name="generator" content="quarto-1.5.55">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SHED - 30 Day Map Challenge</title>
+<title>30 Day Map Challenge – SHED</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,13 +39,22 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -54,8 +63,10 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -66,43 +77,43 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">SHED</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">index</span></a>
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">index</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./opendata.html" rel="" target="">
- <span class="menu-text">open data</span></a>
+    <a class="nav-link" href="./opendata.html"> 
+<span class="menu-text">open data</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./script.html" rel="" target="">
- <span class="menu-text">python script</span></a>
+    <a class="nav-link" href="./script.html"> 
+<span class="menu-text">python script</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./30daymapchallenge.html" rel="" target="" aria-current="page">
- <span class="menu-text">30 day map challenge</span></a>
+    <a class="nav-link active" href="./30daymapchallenge.html" aria-current="page"> 
+<span class="menu-text">30 day map challenge</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./CRI.qmd" rel="" target="">
- <span class="menu-text">Collaborative Research Institute (CRI)</span></a>
+    <a class="nav-link" href="./CRI.qmd"> 
+<span class="menu-text">Collaborative Research Institute (CRI)</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
           </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -188,7 +199,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <section id="it-starts" class="level2">
 <h2 class="anchored" data-anchor-id="it-starts">It Starts</h2>
@@ -217,7 +230,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p><img src="30-day/01/eurocentrum-01.png" class="lightbox img-fluid" alt="A Eurocentric &quot;world&quot; map based on the EPSG:3034 equal area projection showing population change between 2020 and 2030 based on WorldPop data. White is areas of low or no population, the colour is then in population per km² with purple > -100*, grey between -10 and 10, green > 10, yellow > 100* that is a reduction"></p>
+<p><a href="30-day/01/eurocentrum-01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="30-day/01/eurocentrum-01.png" class="img-fluid" alt="A Eurocentric &quot;world&quot; map based on the EPSG:3034 equal area projection showing population change between 2020 and 2030 based on WorldPop data. White is areas of low or no population, the colour is then in population per km² with purple > -100*, grey between -10 and 10, green > 10, yellow > 100* that is a reduction"></a></p>
 </section>
 <section id="lines" class="level3">
 <h3 class="anchored" data-anchor-id="lines"><a href="https://fosstodon.org/@wnd/115479839907939776">2025-11-02 “Lines”</a></h3>
@@ -234,7 +247,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/02/south-yorkshire-fens-01.png" class="lightbox img-fluid figure-img" style="width:50.0%" alt="A map showing the heavy rail network model as orange lines with stations as layers orange hexagons. The map centred on the East Coast Main Line between South Yorkshire and the Fens"></p>
+<p><a href="30-day/02/south-yorkshire-fens-01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="30-day/02/south-yorkshire-fens-01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%" alt="A map showing the heavy rail network model as orange lines with stations as layers orange hexagons. The map centred on the East Coast Main Line between South Yorkshire and the Fens"></a></p>
 </figure>
 </div>
 </section>
@@ -278,16 +291,19 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/03/mook-01-30.png" class="lightbox img-fluid figure-img" style="width:90.0%" alt="A map of Europe showing a theoretical high-speed rail network based on population distribution. The high-speed lines are drawn in orange between population centres with colour and line width proportional to the number of people who would use that route based on aggregating WorldPop population data into a coarse set of h3 hexagons"></p>
+<p><a href="30-day/03/mook-01-30.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="30-day/03/mook-01-30.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" alt="A map of Europe showing a theoretical high-speed rail network based on population distribution. The high-speed lines are drawn in orange between population centres with colour and line width proportional to the number of people who would use that route based on aggregating WorldPop population data into a coarse set of h3 hexagons"></a></p>
 </figure>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="30-day/03/mook-03-00-name.png" class="lightbox img-fluid" alt="A map of Europe showing a theoretical high-speed rail network based on population distribution. The high-speed lines are drawn in orange between named population centres with colour and line width proportional to the number of people who would use that route based on aggregating WorldPop population data into a more detailed set of h3 hexagons"></p>
+<p><a href="30-day/03/mook-03-00-name.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="30-day/03/mook-03-00-name.png" class="img-fluid" alt="A map of Europe showing a theoretical high-speed rail network based on population distribution. The high-speed lines are drawn in orange between named population centres with colour and line width proportional to the number of people who would use that route based on aggregating WorldPop population data into a more detailed set of h3 hexagons"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="30-day/03/mook-03-30-name.png" class="lightbox img-fluid" alt="A map of Europe showing a theoretical high-speed rail network based on population distribution. The high-speed lines are drawn in orange between named population centres with colour and line width proportional to the number of people who would use that route based on aggregating WorldPop population data into a more detailed set of h3 hexagons rotated by 30°"></p>
+<p><a href="30-day/03/mook-03-30-name.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="30-day/03/mook-03-30-name.png" class="img-fluid" alt="A map of Europe showing a theoretical high-speed rail network based on population distribution. The high-speed lines are drawn in orange between named population centres with colour and line width proportional to the number of people who would use that route based on aggregating WorldPop population data into a more detailed set of h3 hexagons rotated by 30°"></a></p>
 </div>
 </div>
 </div>
@@ -307,7 +323,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/04/sheffield-01.png" class="lightbox img-fluid figure-img" style="width:80.0%" alt="A map showing the shortest walking routes from the 2021 census Output Area locations to the stations near Sheffield, with Sheffield in the centre as orange lines. The line width is proportional to the aggregated population and the routes are based on based on the OpenStreetMap path and road data."></p>
+<p><a href="30-day/04/sheffield-01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="30-day/04/sheffield-01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="A map showing the shortest walking routes from the 2021 census Output Area locations to the stations near Sheffield, with Sheffield in the centre as orange lines. The line width is proportional to the aggregated population and the routes are based on based on the OpenStreetMap path and road data."></a></p>
 </figure>
 </div>
 </section>
@@ -326,7 +342,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/05/Wayne-04.png" class="lightbox img-fluid figure-img" alt="A global map of the world showing places called &quot;Wayne&quot; as points. Blue points correspond to streets, purple points correspond to political boundaries and red points correspond to geographical features"></p>
+<p><a href="30-day/05/Wayne-04.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="30-day/05/Wayne-04.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A global map of the world showing places called &quot;Wayne&quot; as points. Blue points correspond to streets, purple points correspond to political boundaries and red points correspond to geographical features"></a></p>
 </figure>
 </div>
 </section>
@@ -343,19 +359,22 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/06/AUT-yband-01.png" class="lightbox img-fluid figure-img" alt="A map of Austria showing the political boundary in black with population orange colour density proportional to the fraction of total population in 100m East-to-West bands"></p>
+<p><a href="30-day/06/AUT-yband-01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="30-day/06/AUT-yband-01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map of Austria showing the political boundary in black with population orange colour density proportional to the fraction of total population in 100m East-to-West bands"></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/06/AUT-xband-01.png" class="lightbox img-fluid figure-img" alt="A map of Austria showing the political boundary in black with population orange colour density proportional to the fraction of total population in 100m North-to-South bands"></p>
+<p><a href="30-day/06/AUT-xband-01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="30-day/06/AUT-xband-01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map of Austria showing the political boundary in black with population orange colour density proportional to the fraction of total population in 100m North-to-South bands"></a></p>
 </figure>
 </div>
 </div>
@@ -375,19 +394,22 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/07/south-services-80.png" class="lightbox img-fluid figure-img" alt="A map showing heavy railway services as orange lines with the width proportional to the number of services that operated on week of 18 August 2025 for all stations within a 80km radius of the 22M South Eastern population centred around London. The line width is proportional to the number of services that operated."></p>
+<p><a href="30-day/07/south-services-80.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="30-day/07/south-services-80.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map showing heavy railway services as orange lines with the width proportional to the number of services that operated on week of 18 August 2025 for all stations within a 80km radius of the 22M South Eastern population centred around London. The line width is proportional to the number of services that operated."></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/07/north-services-80.png" class="lightbox img-fluid figure-img" alt="A map showing heavy railway services as orange lines with the width proportional to the number of services that operated on week 18 August 2025 for all stations within a 80km radius of the 20M North and Midlands population centred around Leek in Staffordshire. The line width is proportional to the number of services that operated."></p>
+<p><a href="30-day/07/north-services-80.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="30-day/07/north-services-80.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map showing heavy railway services as orange lines with the width proportional to the number of services that operated on week 18 August 2025 for all stations within a 80km radius of the 20M North and Midlands population centred around Leek in Staffordshire. The line width is proportional to the number of services that operated."></a></p>
 </figure>
 </div>
 </div>
@@ -427,12 +449,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/08/europa-urban.png" class="lightbox img-fluid figure-img" style="width:80.0%" alt="A map showing urban population density as shades of orange for a given value of &quot;Europe&quot;"></p>
+<p><a href="30-day/08/europa-urban.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="30-day/08/europa-urban.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="A map showing urban population density as shades of orange for a given value of &quot;Europe&quot;"></a></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/08/europa-urban-label.png" class="lightbox img-fluid figure-img" style="width:80.0%" alt="A map showing urban population density as shades of orange for a given values of &quot;Europe&quot; with scaled labels for urban centres based on urban population count"></p>
+<p><a href="30-day/08/europa-urban-label.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="30-day/08/europa-urban-label.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="A map showing urban population density as shades of orange for a given values of &quot;Europe&quot; with scaled labels for urban centres based on urban population count"></a></p>
 </figure>
 </div>
 </section>
@@ -451,7 +473,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/09/West-Yorkshire-metro-scaled.png" class="lightbox img-fluid figure-img" style="width:80.0%" alt="A hand-drawn map of Leeds and towns in vicinity (Bradford, Huddersfield and Wakefield) in black-ink on a brown paper bag showing the West Yorkshire metro public transport network. The text is scaled to the approximate population of the towns in the region."></p>
+<p><a href="30-day/09/West-Yorkshire-metro-scaled.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="30-day/09/West-Yorkshire-metro-scaled.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="A hand-drawn map of Leeds and towns in vicinity (Bradford, Huddersfield and Wakefield) in black-ink on a brown paper bag showing the West Yorkshire metro public transport network. The text is scaled to the approximate population of the towns in the region."></a></p>
 </figure>
 </div>
 <div class="callout callout-style-simple callout-note no-icon">
@@ -480,7 +502,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/10/fizzy-knitting-03.png" class="lightbox img-fluid figure-img" style="width:80.0%" alt="A map of the British heavy rail network showing the myriad of*  different electrification types with key. From the the majority of the network is without electrification (black), 25kV Overhead Line Electrification (OLE)  (red) and 750V DC (dark green). * also known as 10"></p>
+<p><a href="30-day/10/fizzy-knitting-03.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="30-day/10/fizzy-knitting-03.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="A map of the British heavy rail network showing the myriad of*  different electrification types with key. From the the majority of the network is without electrification (black), 25kV Overhead Line Electrification (OLE)  (red) and 750V DC (dark green). * also known as 10"></a></p>
 </figure>
 </div>
 <div class="callout callout-style-simple callout-note no-icon">
@@ -510,7 +532,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/11/2025-08-18-nc.gif" class="lightbox img-fluid figure-img" style="width:50.0%" alt="An animated map of the British rail network showing track occupancy count for passenger train services as orange lines with width proportional to the service count in hour slices for the week of 18 August 2025"></p>
+<p><a href="30-day/11/2025-08-18-nc.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img src="30-day/11/2025-08-18-nc.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%" alt="An animated map of the British rail network showing track occupancy count for passenger train services as orange lines with width proportional to the service count in hour slices for the week of 18 August 2025"></a></p>
 </figure>
 </div>
 </section>
@@ -529,7 +551,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/12/future-02.png" class="lightbox img-fluid figure-img" style="width:80.0%" alt="A future public transport map for 2125 showing land in light blue, network links in orange width proportion to flow and population centres increasing density in yellow, and cyan."></p>
+<p><a href="30-day/12/future-02.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="30-day/12/future-02.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="A future public transport map for 2125 showing land in light blue, network links in orange width proportion to flow and population centres increasing density in yellow, and cyan."></a></p>
 </figure>
 </div>
 </section>
@@ -546,19 +568,22 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/13/north-100km.png" class="lightbox img-fluid figure-img" alt="A map showing OpenStreetMap and EU Copernicus GHS data for a 100km radius circle around a point near Leek, in Northern  England that has a population 20 141 911."></p>
+<p><a href="30-day/13/north-100km.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img src="30-day/13/north-100km.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map showing OpenStreetMap and EU Copernicus GHS data for a 100km radius circle around a point near Leek, in Northern  England that has a population 20 141 911."></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/13/london-100km.png" class="lightbox img-fluid figure-img" alt="A map showing OpenStreetMap and EU GHS layer data for a 100km radius circle around a point near West London, that has a population 22 635 112."></p>
+<p><a href="30-day/13/london-100km.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img src="30-day/13/london-100km.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map showing OpenStreetMap and EU GHS layer data for a 100km radius circle around a point near West London, that has a population 22 635 112."></a></p>
 </figure>
 </div>
 </div>
@@ -579,7 +604,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/14/rail-hs-04.png" class="lightbox img-fluid figure-img" alt="A map of Europe showing high-speed rail with land in white, sea in light blue. High-speed tail lines are orange or otherwise in black."></p>
+<p><a href="30-day/14/rail-hs-04.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20"><img src="30-day/14/rail-hs-04.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map of Europe showing high-speed rail with land in white, sea in light blue. High-speed tail lines are orange or otherwise in black."></a></p>
 </figure>
 </div>
 </section>
@@ -606,35 +631,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/15/spark-osm-01.png" class="lightbox img-fluid figure-img" alt="A map showing the high-voltage electricity grid for the islands of Northern Europe and transmission tower locations. The blue diamonds show tower locations, the coloured lines either overhead lines if on a tower, or cables if not. The line colour from green to yellow indicates increasing transmission voltage."></p>
+<p><a href="30-day/15/spark-osm-01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img src="30-day/15/spark-osm-01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map showing the high-voltage electricity grid for the islands of Northern Europe and transmission tower locations. The blue diamonds show tower locations, the coloured lines either overhead lines if on a tower, or cables if not. The line colour from green to yellow indicates increasing transmission voltage."></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/15/spark-osm-02.png" class="lightbox img-fluid figure-img" alt="A map showing the high-voltage electricity grid for the islands of Northern Europe with transmission tower and wind-turbine locations. The blue diamonds show tower locations, the grey square wind-turbines, the coloured lines either overhead lines if on a tower, or cables if not. The line colour from green to yellow indicates increasing transmission voltage."></p>
+<p><a href="30-day/15/spark-osm-02.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img src="30-day/15/spark-osm-02.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map showing the high-voltage electricity grid for the islands of Northern Europe with transmission tower and wind-turbine locations. The blue diamonds show tower locations, the grey square wind-turbines, the coloured lines either overhead lines if on a tower, or cables if not. The line colour from green to yellow indicates increasing transmission voltage."></a></p>
 </figure>
 </div>
 </div>
 </div>
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/15/spark-core-01.png" class="lightbox img-fluid figure-img" alt="A map showing National Grid power lines in orange, cables in dark green and towers as blue diamonds."></p>
+<p><a href="30-day/15/spark-core-01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23"><img src="30-day/15/spark-core-01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map showing National Grid power lines in orange, cables in dark green and towers as blue diamonds."></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/15/spark-core-02.png" class="lightbox img-fluid figure-img" alt="A map showing National Grid and Scottish &amp; Southern Electricity Networks power lines in orange, cables in dark green and towers as blue diamonds."></p>
+<p><a href="30-day/15/spark-core-02.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24"><img src="30-day/15/spark-core-02.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map showing National Grid and Scottish &amp; Southern Electricity Networks power lines in orange, cables in dark green and towers as blue diamonds."></a></p>
 </figure>
 </div>
 </div>
@@ -665,19 +693,22 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/16/worldpop-hinterland-01.png" class="lightbox img-fluid figure-img" alt="A map showing the walking routes from the 1km^2^ WorldPop 2025 population locations to heavy rail stations in Britain as orange lines with width scaled to the aggregated number of people on that route"></p>
+<p><a href="30-day/16/worldpop-hinterland-01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-25"><img src="30-day/16/worldpop-hinterland-01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map showing the walking routes from the 1km^2^ WorldPop 2025 population locations to heavy rail stations in Britain as orange lines with width scaled to the aggregated number of people on that route"></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/16/hinterland-oa-01.png" class="lightbox img-fluid figure-img" alt="A map showing the walking routes from the 2021 census population Output Area/Data Zone locations to heavy rail stations in Britain as orange lines with width scaled to the aggregated number of people on that route. The Census data is from Office of National Statistics and Library of Scotland"></p>
+<p><a href="30-day/16/hinterland-oa-01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-26"><img src="30-day/16/hinterland-oa-01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map showing the walking routes from the 2021 census population Output Area/Data Zone locations to heavy rail stations in Britain as orange lines with width scaled to the aggregated number of people on that route. The Census data is from Office of National Statistics and Library of Scotland"></a></p>
 </figure>
 </div>
 </div>
@@ -698,35 +729,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/17/vega-lite-015.png" class="lightbox img-fluid figure-img" alt="A map of the Islands of Northern Europe at a medium level of simplification showing heavy rail electrification. No electrification is in black, Overhead Contact Line (OCL) in red, other forms of electrification in green and dual electrification in orange."></p>
+<p><a href="30-day/17/vega-lite-015.png" class="lightbox" data-gallery="quarto-lightbox-gallery-27"><img src="30-day/17/vega-lite-015.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map of the Islands of Northern Europe at a medium level of simplification showing heavy rail electrification. No electrification is in black, Overhead Contact Line (OCL) in red, other forms of electrification in green and dual electrification in orange."></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/17/vega-lite-010.png" class="lightbox img-fluid figure-img" alt="A map of the Islands of Northern Europe at a high level of simplification showing heavy rail electrification. No electrification is in black, Overhead Contact Line (OCL) in red, other forms of electrification in green and dual electrification in orange."></p>
+<p><a href="30-day/17/vega-lite-010.png" class="lightbox" data-gallery="quarto-lightbox-gallery-28"><img src="30-day/17/vega-lite-010.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map of the Islands of Northern Europe at a high level of simplification showing heavy rail electrification. No electrification is in black, Overhead Contact Line (OCL) in red, other forms of electrification in green and dual electrification in orange."></a></p>
 </figure>
 </div>
 </div>
 </div>
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/17/vega-lite-020.png" class="lightbox img-fluid figure-img" alt="A map of the Islands of Northern Europe at a lower level of simplification showing heavy rail electrification. No electrification is in black, Overhead Contact Line (OCL) in red, other forms of electrification in green and dual electrification in orange."></p>
+<p><a href="30-day/17/vega-lite-020.png" class="lightbox" data-gallery="quarto-lightbox-gallery-29"><img src="30-day/17/vega-lite-020.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map of the Islands of Northern Europe at a lower level of simplification showing heavy rail electrification. No electrification is in black, Overhead Contact Line (OCL) in red, other forms of electrification in green and dual electrification in orange."></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/17/vega-lite-060.png" class="lightbox img-fluid figure-img" alt="A map of the Islands of Northern Europe with a limited level of simplification showing heavy rail electrification. No electrification is in black, Overhead Contact Line (OCL) in red, other forms of electrification in green and dual electrification in orange."></p>
+<p><a href="30-day/17/vega-lite-060.png" class="lightbox" data-gallery="quarto-lightbox-gallery-30"><img src="30-day/17/vega-lite-060.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map of the Islands of Northern Europe with a limited level of simplification showing heavy rail electrification. No electrification is in black, Overhead Contact Line (OCL) in red, other forms of electrification in green and dual electrification in orange."></a></p>
 </figure>
 </div>
 </div>
@@ -739,20 +773,23 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-body-container">
 <p>These maps then available online here</p>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p><a href="https://anisotropi4.github.io/fizzy-knitting/vega-lite-025.html">Medium simplification</a></p>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p><a href="https://anisotropi4.github.io/fizzy-knitting/vega-lite-020.html">High simplification</a></p>
 </div>
 </div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p><a href="https://anisotropi4.github.io/fizzy-knitting/vega-lite-030.html">Lower simplification</a></p>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p><a href="https://anisotropi4.github.io/fizzy-knitting/vega-lite-060.html">Limited simplification</a></p>
 </div>
 </div>
@@ -776,35 +813,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/18/collide.gif" class="lightbox img-fluid figure-img" alt="An animated simulation of a theoretical solar system with two planets showing the trajectory of the two planets as red and green arcs and the central mass as a blue cross. In this video the chaotic movement of the two planets causing the two planets to collide."></p>
+<p><a href="30-day/18/collide.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-31"><img src="30-day/18/collide.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="An animated simulation of a theoretical solar system with two planets showing the trajectory of the two planets as red and green arcs and the central mass as a blue cross. In this video the chaotic movement of the two planets causing the two planets to collide."></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/18/v-crash.gif" class="lightbox img-fluid figure-img" alt="An animated simulation of a theoretical solar system with two planets showing the trajectory of the two planets as red and green arcs and the central mass as a blue cross. In this video the chaotic movement of the two planets causes the green body to collide with the central star."></p>
+<p><a href="30-day/18/v-crash.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-32"><img src="30-day/18/v-crash.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="An animated simulation of a theoretical solar system with two planets showing the trajectory of the two planets as red and green arcs and the central mass as a blue cross. In this video the chaotic movement of the two planets causes the green body to collide with the central star."></a></p>
 </figure>
 </div>
 </div>
 </div>
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/18/uv-comet.gif" class="lightbox img-fluid figure-img" alt="An animated simulation of a theoretical solar system with two planets showing the trajectory of the two planets as red and green arcs and the central mass as a blue cross. In this video the chaotic movement of the system causing the green planets to escape the solar system.."></p>
+<p><a href="30-day/18/uv-comet.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-33"><img src="30-day/18/uv-comet.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="An animated simulation of a theoretical solar system with two planets showing the trajectory of the two planets as red and green arcs and the central mass as a blue cross. In this video the chaotic movement of the system causing the green planets to escape the solar system.."></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/18/normal.gif" class="lightbox img-fluid figure-img" alt="An animated simulation of a theoretical solar system with two planets showing the trajectory of the two planets as red and green arcs and the central mass as a blue cross. In this video the chaotic movement of the system is not sufficiently large to cause anything other than a perturbation of the green planet."></p>
+<p><a href="30-day/18/normal.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-34"><img src="30-day/18/normal.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="An animated simulation of a theoretical solar system with two planets showing the trajectory of the two planets as red and green arcs and the central mass as a blue cross. In this video the chaotic movement of the system is not sufficiently large to cause anything other than a perturbation of the green planet."></a></p>
 </figure>
 </div>
 </div>
@@ -825,35 +865,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/19/ne-rail-4326.png" class="lightbox img-fluid figure-img" alt="A projection showing heavy rail lines as orange lines on a world map using base latitude and longitude coordinates projection EPSG3857 in °"></p>
+<p><a href="30-day/19/ne-rail-4326.png" class="lightbox" data-gallery="quarto-lightbox-gallery-35"><img src="30-day/19/ne-rail-4326.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A projection showing heavy rail lines as orange lines on a world map using base latitude and longitude coordinates projection EPSG3857 in °"></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/19/ne-rail-3857.png" class="lightbox img-fluid figure-img" alt="A projection showing heavy rail lines as orange lines on a world map using a Pseudo-Mercator projection EPSG3857 in m"></p>
+<p><a href="30-day/19/ne-rail-3857.png" class="lightbox" data-gallery="quarto-lightbox-gallery-36"><img src="30-day/19/ne-rail-3857.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A projection showing heavy rail lines as orange lines on a world map using a Pseudo-Mercator projection EPSG3857 in m"></a></p>
 </figure>
 </div>
 </div>
 </div>
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/19/ne-rail-3034.png" class="lightbox img-fluid figure-img" alt="A projection showing heavy rail lines as orange lines on a world map using a Europ-centric projection EPSG3034 in m"></p>
+<p><a href="30-day/19/ne-rail-3034.png" class="lightbox" data-gallery="quarto-lightbox-gallery-37"><img src="30-day/19/ne-rail-3034.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A projection showing heavy rail lines as orange lines on a world map using a Europ-centric projection EPSG3034 in m"></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/19/ne-rail-27700.png" class="lightbox img-fluid figure-img" alt="A projection showing heavy rail lines as orange lines on a world map using the Ordnance Survey UK-centric projection EPSG27700 in m"></p>
+<p><a href="30-day/19/ne-rail-27700.png" class="lightbox" data-gallery="quarto-lightbox-gallery-38"><img src="30-day/19/ne-rail-27700.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A projection showing heavy rail lines as orange lines on a world map using the Ordnance Survey UK-centric projection EPSG27700 in m"></a></p>
 </figure>
 </div>
 </div>
@@ -874,19 +917,22 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/20/flux-01.png" class="lightbox img-fluid figure-img" alt="A map of OpenStreetMap data for Great Britain and Ireland showing rivers as blue lines"></p>
+<p><a href="30-day/20/flux-01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-39"><img src="30-day/20/flux-01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map of OpenStreetMap data for Great Britain and Ireland showing rivers as blue lines"></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/20/flux-01A.png" class="lightbox img-fluid figure-img" alt="A map of OpenStreetMap data for Great Britain and Ireland showing rivers, streams and canals as blue lines"></p>
+<p><a href="30-day/20/flux-01A.png" class="lightbox" data-gallery="quarto-lightbox-gallery-40"><img src="30-day/20/flux-01A.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map of OpenStreetMap data for Great Britain and Ireland showing rivers, streams and canals as blue lines"></a></p>
 </figure>
 </div>
 </div>
@@ -894,7 +940,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/20/flux-02.png" class="lightbox img-fluid figure-img" style="width:35.0%" alt="A map of OpenStreetMap data for Wales showing rivers, streams and canals as blue lines"></p>
+<p><a href="30-day/20/flux-02.png" class="lightbox" data-gallery="quarto-lightbox-gallery-41"><img src="30-day/20/flux-02.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:35.0%" alt="A map of OpenStreetMap data for Wales showing rivers, streams and canals as blue lines"></a></p>
 </figure>
 </div>
 <div class="callout callout-style-simple callout-note no-icon">
@@ -907,19 +953,22 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/20/flux-02A.png" class="lightbox img-fluid figure-img" alt="A map of OpenStreetMap data for Great Britain showing rivers, streams and canals as blue lines and Ordnance Survey Open River data as golden lines"></p>
+<p><a href="30-day/20/flux-02A.png" class="lightbox" data-gallery="quarto-lightbox-gallery-42"><img src="30-day/20/flux-02A.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map of OpenStreetMap data for Great Britain showing rivers, streams and canals as blue lines and Ordnance Survey Open River data as golden lines"></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/20/flux-04.png" class="lightbox img-fluid figure-img" alt="A map of OpenStreetMap data for Wales showing rivers, streams and canals as blue lines and Ordnance Survey Open River data as golden lines"></p>
+<p><a href="30-day/20/flux-04.png" class="lightbox" data-gallery="quarto-lightbox-gallery-43"><img src="30-day/20/flux-04.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map of OpenStreetMap data for Wales showing rivers, streams and canals as blue lines and Ordnance Survey Open River data as golden lines"></a></p>
 </figure>
 </div>
 </div>
@@ -941,19 +990,22 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/21/konzert-03.png" class="lightbox img-fluid figure-img" alt="A world map with land in bronze and sea in white showing locations of Einstürnzende Neubaten concerts using the Einstürnzende Neubaten petroglyph"></p>
+<p><a href="30-day/21/konzert-03.png" class="lightbox" data-gallery="quarto-lightbox-gallery-44"><img src="30-day/21/konzert-03.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A world map with land in bronze and sea in white showing locations of Einstürnzende Neubaten concerts using the Einstürnzende Neubaten petroglyph"></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/21/konzert-04.png" class="lightbox img-fluid figure-img" alt="A map of Europe with land in bronze showing locations of Einstürnzende Neubaten concerts using the Einstürnzende Neubaten petroglyph"></p>
+<p><a href="30-day/21/konzert-04.png" class="lightbox" data-gallery="quarto-lightbox-gallery-45"><img src="30-day/21/konzert-04.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map of Europe with land in bronze showing locations of Einstürnzende Neubaten concerts using the Einstürnzende Neubaten petroglyph"></a></p>
 </figure>
 </div>
 </div>
@@ -984,22 +1036,25 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/22/ne-paybas-01.png" class="lightbox img-fluid figure-img" style="width:80.0%" alt="Natural Earth Data urban 10m population data for the low countries coloured in viridis by zoom level. Which seems to link to population density"></p>
+<p><a href="30-day/22/ne-paybas-01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-46"><img src="30-day/22/ne-paybas-01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Natural Earth Data urban 10m population data for the low countries coloured in viridis by zoom level. Which seems to link to population density"></a></p>
 </figure>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout="[65,35]">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 65.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/22/ne-europe-01.png" class="lightbox img-fluid figure-img" alt="Natural Earth Data urban 10m population data for Europe coloured in Viridis by zoom level. Which seems to link to population density, plus rail lines in orange"></p>
+<p><a href="30-day/22/ne-europe-01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-47"><img src="30-day/22/ne-europe-01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Natural Earth Data urban 10m population data for Europe coloured in Viridis by zoom level. Which seems to link to population density, plus rail lines in orange"></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 35.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/22/ne-ine-01.png" class="lightbox img-fluid figure-img" alt="Natural Earth Data urban 10m population data for the Islands of Northern Europe coloured in Viridis by zoom level. Which seems to link to population density, plus rail lines in orange"></p>
+<p><a href="30-day/22/ne-ine-01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-48"><img src="30-day/22/ne-ine-01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Natural Earth Data urban 10m population data for the Islands of Northern Europe coloured in Viridis by zoom level. Which seems to link to population density, plus rail lines in orange"></a></p>
 </figure>
 </div>
 </div>
@@ -1024,7 +1079,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/23/.png" class="lightbox img-fluid figure-img" style="width:80.0%" alt=""></p>
+<p><a href="30-day/23/.png" class="lightbox" data-gallery="quarto-lightbox-gallery-49"><img src="30-day/23/.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt=""></a></p>
 </figure>
 </div>
 </section>
@@ -1043,7 +1098,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/24/hinterland-station-06.png" class="lightbox img-fluid figure-img" style="width:80.0%" alt=""></p>
+<p><a href="30-day/24/hinterland-station-06.png" class="lightbox" data-gallery="quarto-lightbox-gallery-50"><img src="30-day/24/hinterland-station-06.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt=""></a></p>
 </figure>
 </div>
 <div class="callout callout-style-simple callout-note no-icon">
@@ -1083,35 +1138,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/25/europa-01-00.png" class="lightbox img-fluid figure-img" alt="Wordlpop European population density scaled in shards of orange aggregated into hexagons"></p>
+<p><a href="30-day/25/europa-01-00.png" class="lightbox" data-gallery="quarto-lightbox-gallery-51"><img src="30-day/25/europa-01-00.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Wordlpop European population density scaled in shards of orange aggregated into hexagons"></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/25/europa-02-00.png" class="lightbox img-fluid figure-img" alt="Wordlpop European population density scaled in shards of orange aggregated into hexagons"></p>
+<p><a href="30-day/25/europa-02-00.png" class="lightbox" data-gallery="quarto-lightbox-gallery-52"><img src="30-day/25/europa-02-00.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Wordlpop European population density scaled in shards of orange aggregated into hexagons"></a></p>
 </figure>
 </div>
 </div>
 </div>
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/25/europa-03-00.png" class="lightbox img-fluid figure-img" alt="Wordlpop European population density scaled in shards of orange aggregated into hexagons"></p>
+<p><a href="30-day/25/europa-03-00.png" class="lightbox" data-gallery="quarto-lightbox-gallery-53"><img src="30-day/25/europa-03-00.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Wordlpop European population density scaled in shards of orange aggregated into hexagons"></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/25/europa-04-00.png" class="lightbox img-fluid figure-img" alt="Wordlpop European population density scaled in shards of orange aggregated into hexagons"></p>
+<p><a href="30-day/25/europa-04-00.png" class="lightbox" data-gallery="quarto-lightbox-gallery-54"><img src="30-day/25/europa-04-00.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Wordlpop European population density scaled in shards of orange aggregated into hexagons"></a></p>
 </figure>
 </div>
 </div>
@@ -1127,19 +1185,22 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout="[[50,50], [25]]">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/25/europa-05-00.png" class="lightbox img-fluid figure-img" alt="Wordlpop European population density scaled in shards of orange aggregated into hexagons"></p>
+<p><a href="30-day/25/europa-05-00.png" class="lightbox" data-gallery="quarto-lightbox-gallery-55"><img src="30-day/25/europa-05-00.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Wordlpop European population density scaled in shards of orange aggregated into hexagons"></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/25/europa-06-00.png" class="lightbox img-fluid figure-img" alt="Wordlpop European population density scaled in shards of orange aggregated into hexagons"></p>
+<p><a href="30-day/25/europa-06-00.png" class="lightbox" data-gallery="quarto-lightbox-gallery-56"><img src="30-day/25/europa-06-00.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Wordlpop European population density scaled in shards of orange aggregated into hexagons"></a></p>
 </figure>
 </div>
 </div>
@@ -1147,7 +1208,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/25/europa-07-00.png" class="lightbox img-fluid figure-img" style="width:50.0%" alt="Wordlpop European population density scaled in shards of orange aggregated into hexagons"></p>
+<p><a href="30-day/25/europa-07-00.png" class="lightbox" data-gallery="quarto-lightbox-gallery-57"><img src="30-day/25/europa-07-00.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%" alt="Wordlpop European population density scaled in shards of orange aggregated into hexagons"></a></p>
 </figure>
 </div>
 </section>
@@ -1166,7 +1227,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/26/j1-small-animation.gif" class="lightbox img-fluid figure-img" style="width:80.0%" alt="An animated map of passenger travel by financial year in Britain showing land in dark green, sea in light blue and scaled aggregated passenger numbers as white lines with a description in sans serif stating the year"></p>
+<p><a href="30-day/26/j1-small-animation.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-58"><img src="30-day/26/j1-small-animation.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="An animated map of passenger travel by financial year in Britain showing land in dark green, sea in light blue and scaled aggregated passenger numbers as white lines with a description in sans serif stating the year"></a></p>
 </figure>
 </div>
 <div class="callout callout-style-simple callout-note no-icon">
@@ -1195,7 +1256,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/27/network-rail-boundaries.gif" class="lightbox img-fluid figure-img" style="width:50.0%" alt="An animated hierarchical map of the organisational operational boundaries of Network Rail as black lines and shading from route, region, maintenance delivery units and beyond."></p>
+<p><a href="30-day/27/network-rail-boundaries.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-59"><img src="30-day/27/network-rail-boundaries.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%" alt="An animated hierarchical map of the organisational operational boundaries of Network Rail as black lines and shading from route, region, maintenance delivery units and beyond."></a></p>
 </figure>
 </div>
 </section>
@@ -1212,19 +1273,22 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/28/naei23-01.png" class="lightbox img-fluid figure-img" alt="A map of the UK showing atmospheric pollution in black using the NAEI 2023 all pollution dataset. "></p>
+<p><a href="30-day/28/naei23-01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-60"><img src="30-day/28/naei23-01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map of the UK showing atmospheric pollution in black using the NAEI 2023 all pollution dataset. "></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/28/naei23-02.png" class="lightbox img-fluid figure-img" alt="A map of the UK showing atmospheric pollution in black using the NAEI 2023 land transport pollution dataset."></p>
+<p><a href="30-day/28/naei23-02.png" class="lightbox" data-gallery="quarto-lightbox-gallery-61"><img src="30-day/28/naei23-02.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map of the UK showing atmospheric pollution in black using the NAEI 2023 land transport pollution dataset."></a></p>
 </figure>
 </div>
 </div>
@@ -1244,19 +1308,22 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/29/raster-01.png" class="lightbox img-fluid figure-img" alt="A map showing the population density of the UK and Ireland in shades of orange."></p>
+<p><a href="30-day/29/raster-01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-62"><img src="30-day/29/raster-01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map showing the population density of the UK and Ireland in shades of orange."></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/29/raster-02.png" class="lightbox img-fluid figure-img" alt="A map showing predicted population density change in the UK and Ireland between 2025 and 2030 in Viridis where darker colours are population reduction and lighter green or yellow indicate population growth"></p>
+<p><a href="30-day/29/raster-02.png" class="lightbox" data-gallery="quarto-lightbox-gallery-63"><img src="30-day/29/raster-02.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map showing predicted population density change in the UK and Ireland between 2025 and 2030 in Viridis where darker colours are population reduction and lighter green or yellow indicate population growth"></a></p>
 </figure>
 </div>
 </div>
@@ -1289,51 +1356,54 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/30/world-electrification-topo-02.png" class="lightbox img-fluid figure-img" alt="A map showing the population density of the UK and Ireland in shades of orange."></p>
+<p><a href="30-day/30/world-electrification-topo-02.png" class="lightbox" data-gallery="quarto-lightbox-gallery-64"><img src="30-day/30/world-electrification-topo-02.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map showing the population density of the UK and Ireland in shades of orange."></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/30/world-electrification-topo-03.png" class="lightbox img-fluid figure-img" alt="A map showing predicted population density change in the UK and Ireland between 2025 and 2030 in Viridis where darker colours are population reduction and lighter green or yellow indicate population growth"></p>
+<p><a href="30-day/30/world-electrification-topo-03.png" class="lightbox" data-gallery="quarto-lightbox-gallery-65"><img src="30-day/30/world-electrification-topo-03.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map showing predicted population density change in the UK and Ireland between 2025 and 2030 in Viridis where darker colours are population reduction and lighter green or yellow indicate population growth"></a></p>
 </figure>
 </div>
 </div>
 </div>
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/30/world-electrification-topo-04.png" class="lightbox img-fluid figure-img" alt="A map showing predicted population density change in the UK and Ireland between 2025 and 2030 in Viridis where darker colours are population reduction and lighter green or yellow indicate population growth"></p>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="30-day/30/world-electrification-topo-05.png" class="lightbox img-fluid figure-img" alt="A map showing predicted population density change in the UK and Ireland between 2025 and 2030 in Viridis where darker colours are population reduction and lighter green or yellow indicate population growth"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="30-day/30/world-electrification-topo-06.png" class="lightbox img-fluid figure-img" alt="A map showing predicted population density change in the UK and Ireland between 2025 and 2030 in Viridis where darker colours are population reduction and lighter green or yellow indicate population growth"></p>
+<p><a href="30-day/30/world-electrification-topo-04.png" class="lightbox" data-gallery="quarto-lightbox-gallery-66"><img src="30-day/30/world-electrification-topo-04.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map showing predicted population density change in the UK and Ireland between 2025 and 2030 in Viridis where darker colours are population reduction and lighter green or yellow indicate population growth"></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="30-day/30/world-electrification-topo-07.png" class="lightbox img-fluid figure-img" alt="A map showing predicted population density change in the UK and Ireland between 2025 and 2030 in Viridis where darker colours are population reduction and lighter green or yellow indicate population growth"></p>
+<p><a href="30-day/30/world-electrification-topo-05.png" class="lightbox" data-gallery="quarto-lightbox-gallery-67"><img src="30-day/30/world-electrification-topo-05.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map showing predicted population density change in the UK and Ireland between 2025 and 2030 in Viridis where darker colours are population reduction and lighter green or yellow indicate population growth"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="30-day/30/world-electrification-topo-06.png" class="lightbox" data-gallery="quarto-lightbox-gallery-68"><img src="30-day/30/world-electrification-topo-06.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map showing predicted population density change in the UK and Ireland between 2025 and 2030 in Viridis where darker colours are population reduction and lighter green or yellow indicate population growth"></a></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="30-day/30/world-electrification-topo-07.png" class="lightbox" data-gallery="quarto-lightbox-gallery-69"><img src="30-day/30/world-electrification-topo-07.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A map showing predicted population density change in the UK and Ireland between 2025 and 2030 in Viridis where darker colours are population reduction and lighter green or yellow indicate population growth"></a></p>
 </figure>
 </div>
 </div>
@@ -1410,18 +1480,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -1453,11 +1512,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/anisotropi4@anisotropi4\.github\.io\/shed\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1467,8 +1565,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
       let selectedAnnoteEl;
@@ -1512,6 +1619,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1537,6 +1645,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1560,6 +1694,39 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"loop":false,"closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
 
 
 
