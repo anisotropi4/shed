@@ -30,7 +30,7 @@ I can't remember what motivated to do this. Or even what started this, other tha
 ### [2025-11-01 "Points"](https://fosstodon.org/@wnd/115476758004810874)
 
 ::: {.callout-note appearance="minimal"}
-In a vain attempt for #30MapsInAMonth here is a "Eurocentric" world map EPSG:3034 equal area projection using on [WorldPopProject]() 1km² data showing projected population change between 2020 and 2030.
+In a vain attempt for #30MapsInAMonth here is a "Eurocentric" world map EPSG:3034 equal area projection using on [WorldPop](https://hub.worldpop.org/project/categories?id=3) 1km² data showing projected population change between 2020 and 2030.
 
 #30DayMapChallenge
 :::
@@ -65,7 +65,7 @@ I've now discovered that there are meant to be "themes" for each day in the #30D
 ### [2025-11-03 "Polygons"](https://fosstodon.org/@wnd/115484726949074623)
 
 ::: {.callout-note appearance="minimal"}
-For the third #30MapsInAMonth are three theoretical European full-automated luxury high-speed heavy-rail network maps based on population distribution. This uses H3 hierarchical hexagon library to aggregate @WorldPopProject population data into #polygons, creating a maximum spanning tree network using population-to-population edge-weights and names for major urban centres added using @EUCommission  Global Human Settlement Layer data.
+For the third #30MapsInAMonth are three theoretical European full-automated luxury high-speed heavy-rail network maps based on population distribution. This uses H3 hierarchical hexagon library to aggregate [WorldPop](https://hub.worldpop.org/project/categories?id=3) population data into #polygons, creating a maximum spanning tree network using population-to-population edge-weights and names for major urban centres added using [EUCommission](https://human-settlement.emergency.copernicus.eu/ghs_stat_ucdb2015mt_r2019a.php) Global Human Settlement Layer data.
 
 #rail #network #HighSpeedRail #stations #30DayMapChallenge
 :::
@@ -101,7 +101,7 @@ For the fifth #30MapsInAMonth is a map global map of places called "Wayne" based
 ### [2025-11-06 "Dimensions"](https://fosstodon.org/@wnd/115501537961199585)
 
 ::: {.callout-note appearance="minimal"}
-For the six #30MapsInAMonth are two maps the one-dimensional population distribution of Austria. Aggregating @WorldPopProject@mapstodon.space population and country boundary data, based in 100m slices, this shows the relative population distribution in the horizontal and vertical points on the compass.
+For the six #30MapsInAMonth are two maps the one-dimensional population distribution of Austria. Aggregating [WorldPop](https://hub.worldpop.org/project/categories?id=3) population and [country boundary data](https://hub.worldpop.org/geodata/listing?id=62), based in 100m slices, this shows the relative population distribution in the horizontal and vertical points on the compass.
 
 #population #Austria #30DayMapChallenge #OpenData
 :::
@@ -141,7 +141,7 @@ After a week, it felt that revisiting maps and visualisations from over the last
 ### [2025-11-08 "Urban"](https://fosstodon.org/@wnd/115514196876492437)
 
 ::: {.callout-note appearance="minimal"}
-For the eighth #30MapsInAMonth maps are two maps showing the population density distribution in Europe based on the [WorldPopProject](WorldPopProject@mapstodon.space) 1km^2^ populations dataset with scaled and the [Global Human Settlement (GHS)](@CopernicusEU@respublicae.eu) data to scale labels on the diagram.
+For the eighth #30MapsInAMonth maps are two maps showing the population density distribution in Europe based on the [WorldPop](https://hub.worldpop.org/project/categories?id=3) 1km^2^ populations dataset with scaled and the [Global Human Settlement (GHS)](@CopernicusEU@respublicae.eu) data to scale labels on the diagram.
 
 #urban #population #OpenData #30dayMapChallenge
 :::
@@ -195,7 +195,7 @@ This is based on the Network Rail centre-line track- or network-model and Common
 ### [2025-11-12 "Map from 2125"](https://fosstodon.org/@wnd/115535932460495819)
 
 ::: {.callout-note appearance="minimal"}
-For the twelfth #30MapsInAMonth is a theoretical future public transport network for a hundred years hence. This is based on population density aggregating @WorldPopProject@mapstodon.space  population data onto 43km edge-length hexagons, creating a network flow and overlaying with @CopernicusEU@respublicae.eu urban centre data. The different population centre colours related to different levels of urbanisation.
+For the twelfth #30MapsInAMonth is a theoretical future public transport network for a hundred years hence. This is based on population density aggregating [WorldPop](https://hub.worldpop.org/project/categories?id=3) population data onto 43km edge-length hexagons, creating a network flow and overlaying with @CopernicusEU@respublicae.eu urban centre data. The different population centre colours related to different levels of urbanisation.
 
 #OpenData #30dayMapChallenge #population #PublicTransport #passenger #future
 :::
@@ -205,7 +205,7 @@ For the twelfth #30MapsInAMonth is a theoretical future public transport network
 ### [2025-11-13 "10 minute map"](https://fosstodon.org/@wnd/115541241654595290)
 
 ::: {.callout-note appearance="minimal"}
-For the thirteenth #30MapsInAMonth are two short form maps based on Tom Forth's https://www.tomforth.co.uk/circlepopulations/ tool that shows the population within a 100km radius circle of two points in the UK: a point in the North is 20 141 911 and West London is 22 625 112. This is based on @opendatabund@social.bund.de  Street Map data and @CopernicusEU@respublicae.eu  EU Global Human Settlement (GHS) layer centre data.
+For the thirteenth #30MapsInAMonth are two short form maps based on [Tom Forth's tool](https://www.tomforth.co.uk/circlepopulations/) that shows the population within a 100km radius circle of two points in the UK: a point in the North is 20 141 911 and West London is 22 625 112. This is based on @opendatabund@social.bund.de  Street Map data and @CopernicusEU@respublicae.eu  EU Global Human Settlement (GHS) layer centre data.
 
 #Population #UK #OpenData  #30dayMapChallenge #NorthSouth
 :::
@@ -219,7 +219,7 @@ For the thirteenth #30MapsInAMonth are two short form maps based on Tom Forth's 
 ### [2025-11-14 "OpenStreetMap"](https://fosstodon.org/@wnd/115547181407411754)
 
 ::: {.callout-note appearance="minimal"}
-For the fourteenth #30MapsInAMonth is a map showing high-speed rail, or not, for a given value of "Europe". This is based on  line-speed from [OpenStreetMap](@openstreetmap@en.osm.town) tagged data. The geography is from the [WorldPopProject](@WorldPopProject@mapstodon.space) 1km^2^ dataset.
+For the fourteenth #30MapsInAMonth is a map showing high-speed rail, or not, for a given value of "Europe". This is based on  line-speed from [OpenStreetMap](@openstreetmap@en.osm.town) tagged data. The geography is from the [WorldPop](https://hub.worldpop.org/project/categories?id=3) 1km^2^ dataset.
 :::
 
 ![](30-day/14/rail-hs-04.png){fig-align=center fig-alt="A map of Europe showing high-speed rail with land in white, sea in light blue. High-speed tail lines are orange or otherwise in black." .lightbox}
@@ -263,7 +263,7 @@ The gap in the central belt of Scotland is because I could not find the equivale
 ::: {.callout-note appearance="minimal"}
 For the sixteeth #30MapsInAMonth are two map showing the watershed shortest walking route to the heavy rail stations in Britian. This uses @openstreetmap@en.osm.town  highway, road and path data for routing, scaled to show the number people who might take that path.
 
-The first shows routes based on  @WorldPopProject@mapstodon.space 1km^2^ data
+The first shows routes based on [WorldPop](https://hub.worldpop.org/project/categories?id=3) 1km^2^ data
 The second shows routes based on data from the UK #Census2021
 
 #Rail #Passenger #PublicTransport #GreatBritain #OpenData #30dayMapChallenge
@@ -470,7 +470,7 @@ This visualisation caused the most debate its means, where I found it useful to 
 ### [2025-11-25 "Hexagons"](https://fosstodon.org/@wnd/115609670872835531)
 
 ::: {.callout-note appearance="minimal"}
-For the twenty fifth #30MapsInAMonth are a series of six maps showing [WorldPopProject]() 1km² population data aggregated into a hierarchical set of scaled hexagons.
+For the twenty fifth #30MapsInAMonth are a series of six maps showing [WorldPop](https://hub.worldpop.org/project/categories?id=3) 1km^2^ population data aggregated into a hierarchical set of scaled hexagons.
 :::
 
 ::: {layout-ncol=2}
@@ -539,7 +539,7 @@ For the twenty eighth #30MapsInAMonth are two visualisations based on the [UK Na
 ### [2025-11-29 "Raster"](https://fosstodon.org/@wnd/115632540256268461)
 
 ::: {.callout-note appearance="minimal"}
-For the twenty ninth #30MapsInAMonth are two visualisations based on the [WorldPopProject]() 2030 projected population as 100m² raster data. The first shows the population of the Islands of Northern Europe and the second population change.
+For the twenty ninth #30MapsInAMonth are two visualisations based on the [WorldPop](https://hub.worldpop.org/project/categories?id=3) 2030 projected population as 100m² raster data. The first shows the population of the Islands of Northern Europe and the second population change.
 
 #Raster #Population #Beethoven #GBR #IRE #OpenData
 :::
