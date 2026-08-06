@@ -145,7 +145,7 @@ After a week, it felt that revisiting maps and visualisations from over the last
 ### [2025-11-08 "Urban"](https://fosstodon.org/@wnd/115514196876492437)
 
 ::: {.callout-note appearance="minimal"}
-For the eighth #30MapsInAMonth maps are two maps showing the population density distribution in Europe based on the [WorldPop](https://hub.worldpop.org/project/categories?id=3) 1km^2^ populations dataset with scaled and the [Global Human Settlement (GHS)](https://human-settlement.emergency.copernicus.eu/ghs_stat_ucdb2015mt_r2019a.php) data to scale labels on the diagram.
+For the eighth #30MapsInAMonth maps are two maps showing the population density distribution in Europe based on the [WorldPop](https://hub.worldpop.org/project/categories?id=3) 1km^2^ populations dataset with scaled and the [Global Human Settlement (GHS)](@CopernicusEU@respublicae.eu) data to scale labels on the diagram.
 
 #urban #population #OpenData #30dayMapChallenge
 :::
@@ -224,6 +224,7 @@ For the thirteenth #30MapsInAMonth are two short form maps based on [Tom Forth's
 
 ::: {.callout-note appearance="minimal"}
 For the fourteenth #30MapsInAMonth is a map showing high-speed rail, or not, for a given value of "Europe". This is based on  line-speed from [OpenStreetMap](https://openstreetmap.org) tagged data. The geography is from the [WorldPop](https://hub.worldpop.org/project/categories?id=3) 1km^2^ dataset.
+
 :::
 
 ![](30-day/14/rail-hs-04.png){fig-align=center fig-alt="A map of Europe showing high-speed rail with land in white, sea in light blue. High-speed tail lines are orange or otherwise in black." .lightbox}
