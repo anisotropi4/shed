@@ -1,0 +1,116 @@
+---
+title: "Netwerk"
+toc: true
+execute:
+  cache: true
+  message: false
+  warning: false
+  eval: false
+editor:
+  markdown:
+    wrap: 80
+format:
+  html:
+    code-overflow: wrap
+    citations-hover: false
+    footnotes-hover: false
+    crossrefs-hover: false
+---
+
+## Centre-Line Network Model 
+
+For those interested in such things, here is a visualization of timetabled passenger and freight movement on the #British heavy-rail network, for the week 2026-03-09 to 2026-03-15, aggregated accross the week. This shows movement of train services based on TIPLOC to TIPLOC segments on maps with a series of [TopoJSON simplification](https://github.com/topojson/topojson-specification) network simplification applied to a base map projected in [OSGB36 (EPSG:27000)](https://epsg.io/27700), varying scale and quantization.
+
+```#rail``` ```#passenger``` ```#freight``` ```#data``` ```#visualization```
+
+### Static
+Aggregated heavy railway weekly services 2026 03 09 with [TopoJSON simplification](https://github.com/topojson/topojson-specification) 
+
+### Network Model
+No simplification or quantization.
+
+::: {layout-ncol=1}
+![](00-0000.0/2026-03-09-1440-join-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+Freight services (left) and Passenger services (right)
+:::
+
+### Topo Model quantize 16 vary scale
+
+::: {layout-ncol=2}
+![Quantization 16 scale 0.01](00-0016.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+![Quantization 16 scale 10.0](04-0016.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+![Quantization 16 scale 1000.0](06-0016.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+![Quantization 16 scale 10.0^5^](08-0016.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+:::
+
+
+### Topo Model quantize 64 vary scale
+
+::: {layout-ncol=2}
+![Quantization 64 scale 0.01](00-0064.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+![Quantization 64 scale 10.0](04-0064.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+![Quantization 64 scale 1000.0](06-0064.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+![Quantization 64 scale 10.0^5^](08-0064.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+:::
+
+### Topo Model quantize 128 vary scale 
+
+::: {layout-ncol=2}
+![Quantization 128 scale 0.01](00-0128.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+![Quantization 128 scale 10.0](04-0128.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+![Quantization 128 scale 1000.0](06-0128.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+![Quantization 128 scale 10.0^5^](08-0128.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+:::
+
+### Topo Model scale 1 vary quantization
+::: {layout-ncol=2}
+![Quantization 16 scale 1.0](00-0016.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+![Quantization 32 scale 1.0](00-0032.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+![Quantization 64 scale 1.0](00-0064.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+![Quantization 128  scale 1.0](00-0128.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+![Quantization 256 scale 1.0](00-0256.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+![Quantization 512 scale 1.0](00-0512.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+:::
+
+
+### Topo Model scale 10^7^ vary quantization
+
+::: {layout-ncol=2}
+
+![Quantization 16 scale 10^7^](10-0016.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+
+![Quantization 32 scale 10^7^](10-0032.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+![Quantization 64 scale 10^7^](10-0064.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+![Quantization 128 scale 10^7^](10-0128.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+![Quantization 256 scale 10^7^](10-0256.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+![Quantization 512 scale 10^7^](10-0512.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+![Quantization 1024 scale 10^7^](10-1024.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+
+![Quantization 2048 scale 10.0^7^](10-2048.0/2026-03-09-1440-passenger-007.png){fig-align=center width=100% fig-alt="A map as orange lines with showing heavy railway freight (left) and passenger services (right) the width proportional to the aggregated number of services that operated on week of 9 March 2026. The line width is proportional to the number of timetabled services that operated." .lightbox}
+:::
+
+
+### Reference and License
+
+This is published under [CC BY 4.0 Attribution](https://creativecommons.org/licenses/by/4.0/deed.en) and details about the [licenses and open data used](https://anisotropi4.github.io/shed/opendata.html).
+
