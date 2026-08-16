@@ -1,5 +1,5 @@
 ---
-title: "Netwerk"
+title: "Netzwerk"
 toc: true
 execute:
   cache: true
@@ -19,7 +19,7 @@ format:
 
 ## Centre-Line Network Model 
 
-For those interested in such things, here is a visualization of timetabled passenger and freight movement on the #British heavy-rail network, for the week 2026-03-09 to 2026-03-15, aggregated accross the week. This shows movement of train services based on TIPLOC to TIPLOC segments on maps with a series of [TopoJSON simplification](https://github.com/topojson/topojson-specification) network simplification applied to a base map projected in [OSGB36 (EPSG:27000)](https://epsg.io/27700), varying scale and quantization.
+For those interested in such things, here is a visualization of timetabled passenger and freight movement on the #British heavy-rail network, aggregated over the week 2026-03-09 to 2026-03-15. This shows movement of train services based on TIPLOC to TIPLOC segments on maps with a series of [TopoJSON simplification](https://github.com/topojson/topojson-specification) network simplification applied to a base map projected in [OSGB36 (EPSG:27000)](https://epsg.io/27700), varying scale and quantization.
 
 ```#rail``` ```#passenger``` ```#freight``` ```#data``` ```#visualization```
 
