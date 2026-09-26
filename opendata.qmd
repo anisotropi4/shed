@@ -106,6 +106,7 @@ Code packages, libraries, fonts and other resources
 (@) Department for Transport (DfT) [“Great British Railways: Williams-Shapps plan for rail”](https://www.gov.uk/government/publications/great-british-railways-williams-shapps-plan-for-rail)
 (@) [UK Electrification map](https://electricrailmap.gitlab.io/)
 (@) Railway Industry Association [“Why Rail Electrification”](https://www.riagb.org.uk/RIA/Newsroom/Publications%20Folder/Why_Rail_Electrification_Report.aspx), 2021
+(@) ["Why do cars get a free ride? The social-ecological roots of motonormativity](https://doi.org/10.1016/j.gloenvcha.2025.102980). Walker, I. and te Brömmelstroet, M. (2025), Global Environmental Change, 91, p. 102980. Available at: https://doi.org/10.1016/j.gloenvcha.2025.102980.
 (@) European Agency for Railways (ERA) [“Fostering Rail Through Green Deal – part 2 Freight”](https://www.era.europa.eu/content/era-report-fostering-railway-sector-through-european-green-deal-part-2-freight_en), 2021
 (@) RailNet Europe, [“Timetabling and Capacity Redesign (TTR)”](https://rne.eu/sales-timetabling/ttr), 2022
 (@) Network Rail, [“Rail freight forecasts Scenarios for 2033-34 and 2043-44”](https://www.networkrail.co.uk/wp-content/uploads/2020/08/Rail-freight-forecasts-Scenarios-for-2033-34-and-2043-44.pdf), 2016
@@ -120,4 +121,5 @@ Code packages, libraries, fonts and other resources
 (@) Ordnance Survey [Open River](https://www.ordnancesurvey.co.uk/products/os-open-rivers) data under [OpenGovernment (OGL) 3](http://os.uk/opendata/licence).
 (@) [NationalGrid](https://connecteddata.nationalgrid.co.uk/) spatial [transmission grid](https://connecteddata.nationalgrid.co.uk/dataset/?groups=system-and-network&res_format=gpkg) data under the [National Grid open data](https://commercial.nationalgrid.co.uk/open-data-licence) license.
 (@) [UK National Atmospheric Emissions Inventory (NAEI)](https://naei.energysecurity.gov.uk/) data on air pollutant and CO₂ emission data under [OpenGovernment (OGL) 2](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/).
+(@) Owen Boswarva, “[Output Area counts for licensed vehicles in the UK at the end of 2025](https://owenboswarva.com/blog/post-veh6.htm) released by DfT following FOI request”.
 :::
