@@ -6,6 +6,7 @@ project:
     - script.qmd
     - 30daymapchallenge.qmd
     - Netzwerk.qmd
+    - Vortrag.qmd
   output-dir: docs
 
 format:
@@ -27,6 +28,8 @@ website:
         text: "30 day map challenge"
       - href: Netzwerk.qmd
         text: "network visualisation"
+      - href: Vortrag.qmd
+        text: "talk pdf"
 
   site-url: "https://anisotropi4@anisotropi4.github.io/shed/" # makes site links work on your remote site
 
