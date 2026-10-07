@@ -138,5 +138,19 @@
     "title": "Netzwerk",
     "section": "Static",
     "text": "Static\nAggregated heavy railway weekly services 2026 03 09 with varying TopoJSON simplification.\n\nNetwork Model\nNo simplification or quantization.\n\n\n\n Freight services (left) and Passenger services (right)\n\n\n\n\n\nTopo Model quantize 16 vary scale\n\n\n\n\n\n\nQuantization 16 scale 0.01\n\n\n\n\n\n\n\nQuantization 16 scale 10.0\n\n\n\n\n\n\n\n\n\nQuantization 16 scale 1000.0\n\n\n\n\n\n\n\nQuantization 16 scale 10.05\n\n\n\n\n\n\n\nTopo Model quantize 64 vary scale\n\n\n\n\n\n\nQuantization 64 scale 0.01\n\n\n\n\n\n\n\nQuantization 64 scale 10.0\n\n\n\n\n\n\n\n\n\nQuantization 64 scale 1000.0\n\n\n\n\n\n\n\nQuantization 64 scale 10.05\n\n\n\n\n\n\n\nTopo Model quantize 128 vary scale\n\n\n\n\n\n\nQuantization 128 scale 0.01\n\n\n\n\n\n\n\nQuantization 128 scale 10.0\n\n\n\n\n\n\n\n\n\nQuantization 128 scale 1000.0\n\n\n\n\n\n\n\nQuantization 128 scale 10.05\n\n\n\n\n\n\n\nTopo Model scale 1 vary quantization\n\n\n\n\n\n\nQuantization 16 scale 1.0\n\n\n\n\n\n\n\nQuantization 32 scale 1.0\n\n\n\n\n\n\n\n\n\nQuantization 64 scale 1.0\n\n\n\n\n\n\n\nQuantization 128 scale 1.0\n\n\n\n\n\n\n\n\n\nQuantization 256 scale 1.0\n\n\n\n\n\n\n\nQuantization 512 scale 1.0\n\n\n\n\n\n\n\nTopo Model scale 107 vary quantization\n\n\n\n\n\n\nQuantization 16 scale 107\n\n\n\n\n\n\n\nQuantization 32 scale 107\n\n\n\n\n\n\n\n\n\nQuantization 64 scale 107\n\n\n\n\n\n\n\nQuantization 128 scale 107\n\n\n\n\n\n\n\n\n\nQuantization 256 scale 107\n\n\n\n\n\n\n\nQuantization 512 scale 107\n\n\n\n\n\n\n\n\n\nQuantization 1024 scale 107\n\n\n\n\n\n\n\nQuantization 2048 scale 10.07\n\n\n\n\n\n\n\nReference and License\nThis is published under CC BY 4.0 Attribution and details about the licenses and open data used."
+  },
+  {
+    "objectID": "Vortrag.html",
+    "href": "Vortrag.html",
+    "title": "Vortrag",
+    "section": "",
+    "text": "This is a site for slides from talks I have given, or plan to give.\n\n\nThis is published under CC BY 4.0 Attribution and details about the licenses and open data used."
+  },
+  {
+    "objectID": "Vortrag.html#talk-slides",
+    "href": "Vortrag.html#talk-slides",
+    "title": "Vortrag",
+    "section": "",
+    "text": "This is a site for slides from talks I have given, or plan to give.\n\n\nThis is published under CC BY 4.0 Attribution and details about the licenses and open data used."
   }
 ]

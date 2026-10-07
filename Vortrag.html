@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-10-07">
 
-<title>SHED</title>
+<title>SHED - Vortrag</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">index</span></a>
   </li>  
   <li class="nav-item">
@@ -101,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">network visualisation</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Vortrag.html" rel="" target="">
+    <a class="nav-link active" href="./Vortrag.html" rel="" target="" aria-current="page">
  <span class="menu-text">talk pdf</span></a>
   </li>  
 </ul>
@@ -116,14 +115,23 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#talk-slides" id="toc-talk-slides" class="nav-link active" data-scroll-target="#talk-slides">Talk Slides</a>
+  <ul class="collapse">
+  <li><a href="#reference-and-license" id="toc-reference-and-license" class="nav-link" data-scroll-target="#reference-and-license">Reference and License</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">SHED</h1>
+<h1 class="title">Vortrag</h1>
 </div>
 
 
@@ -131,12 +139,6 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">October 7, 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -144,10 +146,16 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>A base set up for GitHub Common Integration (CI) Quarto and python script environment.</p>
-<p>The “open data” set includes a curated list of open data and other resources that could be used to produce transport and related visualisations in my talks and other visualisations.</p>
+<section id="talk-slides" class="level2">
+<h2 class="anchored" data-anchor-id="talk-slides">Talk Slides</h2>
+<p>This is a site for slides from talks I have given, or plan to give.</p>
+<section id="reference-and-license" class="level3">
+<h3 class="anchored" data-anchor-id="reference-and-license">Reference and License</h3>
+<p>This is published under <a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC BY 4.0 Attribution</a> and details about the <a href="https://anisotropi4.github.io/shed/opendata.html">licenses and open data used</a>.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -246,18 +254,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     };
     window.tippy(el, config); 
   }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      return note.innerHTML;
-    });
-  }
       let selectedAnnoteEl;
       const selectorForAnnotation = ( cell, annotation) => {
         let cellAttr = 'data-code-cell="' + cell + '"';
@@ -344,43 +340,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
           }
         });
       }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
-      });
-    }
-  }
 });
 </script>
 </div> <!-- /content -->
