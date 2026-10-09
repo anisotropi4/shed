@@ -23,7 +23,7 @@ This is a site for slides from talks I have given, or plan to give.
 
 ### FOSS:4G Leeds (2026-10-13)
 
-The talk [A Fully Automated Luxury Global Public Transport Network](https://talks.osgeo.org/foss4g-uk-2026/talk/MLXEFE/)
+The talk details [A Fully Automated Luxury Global Public Transport Network](https://talks.osgeo.org/foss4g-uk-2026/talk/MLXEFE/)
 
 ::: {#fig-service-count}
 {{< video https://github.com/anisotropi4/shed/blob/main/Vortrag/2026-08-17-10-all-007-06-s.mp4
@@ -35,7 +35,11 @@ The talk [A Fully Automated Luxury Global Public Transport Network](https://talk
 Passenger Seat, Carriage and Service Count week 2026-08-17  
 :::
 
-The talk slides [A Fully Automated Luxury Global Public Transport Network](Vortrag/Leeds-20261013-final.pdf).
+Leeds is a friendly, diverse, international city.
+But getting here can be awkward.
+If you were going to build a global high-speed transport network to serve the needs of the students and workers of the People's Republic of West Yorkshire, what would it look like?
+
+The talk slides for [A Fully Automated Luxury Global Public Transport Network](Vortrag/Leeds-20261013-final.pdf).
 
 ### Reference and License
 
