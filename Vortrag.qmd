@@ -21,6 +21,22 @@ format:
 
 This is a site for slides from talks I have given, or plan to give.
 
+### FOSS:4G Leeds (2026-10-13)
+
+The talk is [A Fully Automated Luxury Global Public Transport Network](https://talks.osgeo.org/foss4g-uk-2026/talk/MLXEFE/)
+
+::: {#fig-service-count}
+{{< video Vortrag/2026-08-17-10-all-007-06-s.mp4
+    title="Aggregated passenger seat, carriage and service week of 2026-08-17"
+    start="0"
+    aspect-ratio="36x12" 
+>}}
+
+Passenger Seat, Carriage and Service Count week 2026-08-17  
+:::
+
+The talk slides [A Fully Automated Luxury Global Public Transport Network](Vortrag/Leeds-20261013-final.pdf).
+
 ### Reference and License
 
 This is published under [CC BY 4.0 Attribution](https://creativecommons.org/licenses/by/4.0/deed.en) and details about the [licenses and open data used](https://anisotropi4.github.io/shed/opendata.html).
