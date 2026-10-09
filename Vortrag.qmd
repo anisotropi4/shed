@@ -26,7 +26,7 @@ This is a site for slides from talks I have given, or plan to give.
 The talk [A Fully Automated Luxury Global Public Transport Network](https://talks.osgeo.org/foss4g-uk-2026/talk/MLXEFE/)
 
 ::: {#fig-service-count}
-{{< video https://github.com/anisotropi4/shed/releases/download/1.0.2/2026-08-17-10-all-007-06-s.mp4
+{{< video https://github.com/anisotropi4/shed/blob/main/Vortrag/2026-08-17-10-all-007-06-s.mp4
     title="Aggregated passenger seat, carriage and service week of 2026-08-17"
     start="0"
     aspect-ratio="36x12" 
